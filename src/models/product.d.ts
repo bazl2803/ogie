@@ -1,3 +1,7 @@
+import { Comment } from "./comment";
+import { Feature } from "./feature";
+import { Spec } from "./spec";
+
 export type Product = {
     id: string;
     name: string;
@@ -13,13 +17,12 @@ export type Product = {
     stock: number;
     measureUnit: string;
     brand: string;
-    comments: {
-        userId: string;
-        comment: string;
-        rating: number;
-        createdAt: string;
-        updatedAt: string;
-    }
+    features: Feature[];
+    tags: string[];
+    discount: number;
+    discountExpire: string;
+    specs: Spec[]
+    comments: Comment[];
     createdAt: string;
     updatedAt: string;
 }
