@@ -1,0 +1,23 @@
+.Button {
+	display: flex;
+	padding: 0.625rem;
+	justify-content: center;
+	align-items: center;
+	border: none;
+
+	&-variant {
+		&-filled {
+			background-color: whitesmoke;
+		}
+	}
+
+	&-shape {
+		&-rounded {
+			border-radius: 0.5rem;
+		}
+
+		&-pill {
+			border-radius: 100vw;
+		}
+	}
+}
