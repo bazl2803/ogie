@@ -3,15 +3,16 @@
 /**
  * Dependencies
  */
-import './Button.scss'
+import './.Button.scss';
 
-import clsx from 'clsx'
-import React from 'react'
+import clsx from 'clsx';
+import React from 'react';
+import { Button as AriaButton, ButtonProps } from 'react-aria-components';
 
 /**
  * Props
  */
-interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface IButtonProps extends ButtonProps {
 	className?: string
 	children?: React.ReactNode
 	color?: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info'
@@ -49,13 +50,13 @@ export function Button({
 
 	// JSX
 	return (
-		<button
-			className={ButtonClasses}
-			{...props}>
+		<AriaButton
+			{...props}
+			className={ButtonClasses}>
 			<div className='Button-leftSide'>{leftSide}</div>
 			<div className='Button-content'>{children}</div>
 			<div className='Button-rightSide'>{rightSide}</div>
-		</button>
+		</AriaButton>
 	)
 }
 

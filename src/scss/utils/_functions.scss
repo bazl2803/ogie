@@ -1,0 +1,7 @@
+@function generate-hsl-variable($prefix, $index, $step: 1) {
+	$light: $index * $step;
+	$variable-name: #{$prefix}#{$index};
+	$hsl-value: hsl(0, 0%, $light);
+
+	@return ($variable-name: $hsl-value);
+}
