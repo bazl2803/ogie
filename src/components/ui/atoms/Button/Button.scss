@@ -1,21 +1,18 @@
+@import '../../../../../node_modules/@radix-ui/colors/green.css';
+
 .Button {
-	// Base
 	display: flex;
-	padding: 0.625rem;
+	padding: 12px;
 	justify-content: center;
 	align-items: center;
 	border: none;
+	font-size: 0.85rem;
 	font-weight: 600;
+	outline: 0;
+	background-color: transparent;
 
-	// Properties
-	--backgroundColor: var(--lui-shade-100);
-	--foregroundColor: var(--lui-shade-900);
-
-	&-variant {
-		&-filled {
-			background-color: var(--backgroundColor);
-			color: var(--foregroundColor);
-		}
+	&:hover {
+		opacity: 0.92;
 	}
 
 	&-shape {
@@ -25,6 +22,86 @@
 
 		&-pill {
 			border-radius: 100vw;
+		}
+	}
+
+	&-color {
+		&-primary {
+			--solidShade: var(--lui-palette-primary-500);
+			--lightShade: var(--lui-palette-primary-50);
+			--darkShade: var(--lui-palette-primary-950);
+		}
+
+		&-secondary {
+			--solidShade: var(--lui-shade-500);
+			--lightShade: var(--lui-shade-50);
+			--darkShade: var(--lui-shade-950);
+		}
+
+		&-success {
+			--solidShade: var(--lui-palette-success-500);
+			--lightShade: var(--lui-palette-success-50);
+			--darkShade: var(--lui-palette-success-950);
+		}
+
+		&-info {
+			--solidShade: var(--lui-palette-info-500);
+			--lightShade: var(--lui-palette-info-50);
+			--darkShade: var(--lui-palette-info-950);
+		}
+
+		&-warning {
+			--solidShade: var(--lui-palette-warning-500);
+			--lightShade: var(--lui-palette-warning-50);
+			--darkShade: var(--lui-palette-warning-950);
+		}
+
+		&-danger {
+			--solidShade: var(--lui-palette-danger-500);
+			--lightShade: var(--lui-palette-danger-50);
+			--darkShade: var(--lui-palette-danger-950);
+		}
+	}
+
+	&-variant {
+		&-filled {
+			background-color: var(--solidShade);
+			color: var(--lightShade);
+		}
+
+		&-outline {
+			outline: 1px solid var(--solidShade);
+			@include light-dark(
+				color,
+				var(--darkShade),
+				var(--lightShade)
+			);
+		}
+
+		&-tonal {
+			@include light-dark(
+				background-color,
+				var(--lightShade),
+				var(--darkShade)
+			);
+			@include light-dark(
+				color,
+				var(--darkShade),
+				var(--lightShade)
+			);
+			filter: saturate(2);
+		}
+
+		&-text {
+			&:hover {
+				@include light-dark(
+					background-color,
+					var(--lightShade),
+					var(--darkShade)
+				);
+				opacity: 1;
+				filter: saturate(2);
+			}
 		}
 	}
 }

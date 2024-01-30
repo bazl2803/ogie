@@ -1,0 +1,9 @@
+@mixin light-dark($attribute, $light-value, $dark-value) {
+	// Light mode styles by default
+	#{$attribute}: $light-value;
+
+	// Dark mode styles using media query
+	@media (prefers-color-scheme: dark) {
+		#{$attribute}: $dark-value;
+	}
+}

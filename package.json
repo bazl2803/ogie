@@ -13,6 +13,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@radix-ui/colors": "^3.0.0",
     "clsx": "^2.1.0",
     "firebase": "^10.7.1",
     "next": "14.0.4",

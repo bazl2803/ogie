@@ -1,11 +1,5 @@
-@import url('./utils/_functions.scss');
+@import './utils';
+@import './base';
+@import './theme';
 
-@import url('./base/_reset.scss');
-@import url('./base/_typography.scss');
-@import url('./base/_animations.scss');
-@import url('./base/_utilities.scss');
-
-@import url('./theme/_palette.scss');
-@import url('./theme/_colors.scss');
-
-@import url('./components/Button.scss');
+@import '../components/ui/atoms/Button/Button';
