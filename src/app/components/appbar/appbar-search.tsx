@@ -5,9 +5,9 @@ import { css } from '@styled-system/css';
 export const AppbarSearch = () => {
   return (
     <TextInput
-      className={css({ smDown: { display: 'none' }, w: 560 })}
+      className={css({ smDown: { display: 'none' }, w: 480 })}
       leftslot={<IconSearch />}
-      placeholder="Buscar"
+      placeholder="¿Qué estás buscando?"
       rightslot={'Ctrl+K'}
     />
   );
