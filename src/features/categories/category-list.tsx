@@ -7,7 +7,7 @@ import { stack } from '@styled-system/patterns';
 export const CategoryList = () => {
   return (
     <div className={stack()}>
-      <Title>Categorias</Title>
+      <Title order={'h6'}>Categorias</Title>
       <Carousel>
         <CarouselItem>
           <CategoryCard displayName="Electrodómesticos" />

@@ -13,7 +13,6 @@ const CarouselItemStyles = css({
   transition: 'transform 0.15s, padding-inline 0.15s',
   _hover: {
     transform: 'scale(1.10)',
-    paddingInline: 2,
   },
 });
 

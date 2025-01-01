@@ -1,6 +1,6 @@
 import './globals.css';
 
-import { Appbar } from '@/app/components/appbar/appbar';
+import { Appbar } from '@/features/ui/appbar/appbar';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

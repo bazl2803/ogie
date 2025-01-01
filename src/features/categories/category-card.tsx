@@ -15,6 +15,7 @@ const categoryCardStyles = sva({
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
+      width: '96px',
       gap: 1,
     },
     imageContainer: {
@@ -32,6 +33,8 @@ const categoryCardStyles = sva({
       whiteSpace: 'nowrap',
       overflow: 'hidden',
       textOverflow: 'ellipsis',
+      textAlign: 'center',
+      width: '100%',
     },
   },
 });
