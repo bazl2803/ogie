@@ -1,47 +1,34 @@
-import { Carousel } from '../ui/carousel/carousel';
-import { CarouselItem } from '../ui/carousel/carousel-item';
+import { Carousel, CarouselItem } from '../ui';
+
 import { CategoryCard } from './category-card';
 import { Title } from '../ui/title/title';
 import { stack } from '@styled-system/patterns';
 
 export const CategoryList = () => {
+  const categories = [
+    'Electrodómesticos',
+    'Ropa',
+    'Muebles',
+    'Cocina',
+    'Oficina',
+    'Exterior',
+    'Mascotas',
+    'Calzado',
+    'Tecnología',
+    'Herramientas',
+    'Juguetes',
+  ];
+
   return (
     <div className={stack()}>
-      <Title order={'h6'}>Categorias</Title>
+      <Title variant={'display-large'}>Categorias</Title>
+
       <Carousel>
-        <CarouselItem>
-          <CategoryCard displayName="Electrodómesticos" />
-        </CarouselItem>
-        <CarouselItem>
-          <CategoryCard displayName="Ropa" />
-        </CarouselItem>
-        <CarouselItem>
-          <CategoryCard displayName="Muebles" />
-        </CarouselItem>
-        <CarouselItem>
-          <CategoryCard displayName="Cocina" />
-        </CarouselItem>
-        <CarouselItem>
-          <CategoryCard displayName="Oficina" />
-        </CarouselItem>
-        <CarouselItem>
-          <CategoryCard displayName="Exterior" />
-        </CarouselItem>
-        <CarouselItem>
-          <CategoryCard displayName="Mascotas" />
-        </CarouselItem>
-        <CarouselItem>
-          <CategoryCard displayName="Calzado" />
-        </CarouselItem>
-        <CarouselItem>
-          <CategoryCard displayName="Tecnología" />
-        </CarouselItem>
-        <CarouselItem>
-          <CategoryCard displayName="Herramientas" />
-        </CarouselItem>
-        <CarouselItem>
-          <CategoryCard displayName="Juguetes" />
-        </CarouselItem>
+        {categories.map((category) => (
+          <CarouselItem key={category}>
+            <CategoryCard displayName={category} />
+          </CarouselItem>
+        ))}
       </Carousel>
     </div>
   );

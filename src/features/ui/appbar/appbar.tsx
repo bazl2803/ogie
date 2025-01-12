@@ -12,6 +12,13 @@ const appbarStyles = sva({
   className: 'lukas-appbar',
   slots: ['root', 'content'],
   base: {
+    root: {
+      position: 'sticky',
+      top: 0,
+      zIndex: 1000,
+      backgroundColor: 'white/30',
+      backdropFilter: 'blur(8px)',
+    },
     content: {
       display: 'flex',
       flexDirection: 'row',

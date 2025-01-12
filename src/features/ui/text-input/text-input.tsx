@@ -1,14 +1,14 @@
-import { Input, InputProps } from '../input/Input';
+import { Input, InputProps } from '../input/input';
 
 import { css } from '@styled-system/css';
 
 interface TextInputProps extends InputProps {}
 
 const TextInputStyles = css({
-  backgroundColor: 'neutral.50/80',
+  backgroundColor: 'neutral.50/0',
   padding: '8 12',
   outline: '1px solid',
-  outlineColor: 'neutral.100/80',
+  outlineColor: 'neutral.200',
   borderRadius: 'lg',
 });
 

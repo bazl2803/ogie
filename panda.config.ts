@@ -15,7 +15,14 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      tokens: {
+        fonts: {
+          poppins: {value: 'var(--font-poppins), Poppins'},
+          inter: {value: 'var(--font-inter), Inter'}
+        }
+      }
+    },
   },
 
   // The output directory for your css system
