@@ -1,6 +1,5 @@
 import { CategoryList } from '@/features/categories/category-list';
 import { Hero } from './components/hero/hero';
-import { Text } from '@/features/ui';
 import { css } from '@styled-system/css';
 
 export default function Home() {
