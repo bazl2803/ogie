@@ -10,7 +10,5 @@ export { Button } from './button';
 export { Carousel } from './carousel/carousel';
 export { CarouselItem } from './carousel/carousel-item';
 
-export { Input } from './input/input';
-
 export { Text } from './text/text';
 export { TextInput } from './text-input/text-input';

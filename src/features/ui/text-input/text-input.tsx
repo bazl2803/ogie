@@ -1,5 +1,4 @@
 import React from "react";
-import { Input } from '@/features/ui';
 import { css } from '@styled-system/css';
 
 interface TextInputProps
@@ -20,7 +19,7 @@ const TextInputStyles = css({
 export const TextInput: React.FC<TextInputProps> = ({ className, ...props }) => {
     return (
         <div className={`${TextInputStyles} ${className}`}>
-            <Input type="text" {...props} />
+            <input type="text" {...props} />
         </div>
     );
 };
