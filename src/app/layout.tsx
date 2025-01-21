@@ -5,7 +5,6 @@ import { Inter, Poppins } from 'next/font/google';
 import { Appbar } from '@/features/ui/appbar/appbar';
 import type { Metadata } from 'next';
 import React from 'react';
-import { css } from '@styled-system/css';
 
 export const metadata: Metadata = {
   title: 'Ogie',
