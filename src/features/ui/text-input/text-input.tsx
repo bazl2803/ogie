@@ -2,8 +2,6 @@ import { Input, InputProps } from '../input/input';
 
 import { css } from '@styled-system/css';
 
-interface TextInputProps extends InputProps {}
-
 const TextInputStyles = css({
   backgroundColor: 'neutral.50/0',
   padding: '8 12',
@@ -12,7 +10,7 @@ const TextInputStyles = css({
   borderRadius: 'lg',
 });
 
-export const TextInput: React.FC<TextInputProps> = ({
+export const TextInput: React.FC<InputProps> = ({
   className,
   ...props
 }) => {

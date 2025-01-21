@@ -1,7 +1,6 @@
-import { css, sva } from '@styled-system/css';
-
 import Image from 'next/image';
 import React from 'react';
+import { sva } from '@styled-system/css';
 
 interface CategoryCardProps {
   displayName: string;

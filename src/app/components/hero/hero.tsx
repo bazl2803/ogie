@@ -1,7 +1,4 @@
-import { Poppins } from 'next/font/google';
 import { sva } from '@styled-system/css';
-
-const poppins = Poppins({ weight: '800' });
 
 const HeroStyles = sva({
   slots: ['root', 'title', 'background'],
@@ -13,7 +10,7 @@ const HeroStyles = sva({
       position: 'relative',
       overflow: 'visible',
       width: '100%',
-      height: {base: '25vh', sm: '35vh', md: '40vh', lg: '60vh'},
+      height: { base: '25vh', sm: '35vh', md: '40vh', lg: '60vh' },
       userSelect: 'none',
     },
     background: {
@@ -29,12 +26,12 @@ const HeroStyles = sva({
     },
     title: {
       position: 'relative',
-      fontFamily: poppins.style.fontFamily,
-      fontWeight: poppins.style.fontWeight,
-      fontStyle: poppins.style.fontStyle,
+      fontFamily: 'poppins',
+      fontWeight: '700',
+      fontStyle: 'normal',
       color: 'black/80',
       textWrap: 'pretty',
-      fontSize: 'clamp(1.5rem, 5vw, 12rem)'
+      fontSize: 'clamp(1.5rem, 5vw, 12rem)',
     },
   },
 });
@@ -45,9 +42,7 @@ export const Hero = () => {
   return (
     <div className={classes.root}>
       <div className={classes.background} />
-      <h1
-        className={`${poppins.className} ${classes.title}`}
-      >
+      <h1 className={classes.title}>
         Lo que buscas,
         <br />
         lo encuentras aquí
