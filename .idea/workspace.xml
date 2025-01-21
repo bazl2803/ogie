@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/input/Input.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/text-input/text-input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/text-input/text-input.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +40,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Users\\bryan\\OneDrive\\Documents\\Projects\\ogie\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -97,7 +95,7 @@
       <workItem from="1737168458039" duration="786000" />
       <workItem from="1737169287092" duration="3679000" />
       <workItem from="1737244835925" duration="7209000" />
-      <workItem from="1737430900795" duration="2603000" />
+      <workItem from="1737430900795" duration="2966000" />
     </task>
     <servers />
   </component>

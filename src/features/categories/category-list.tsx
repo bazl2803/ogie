@@ -21,7 +21,7 @@ export const CategoryList = () => {
 
   return (
     <div className={stack()}>
-      <Title variant={'display-large'}>Categorias</Title>
+      <Title variant={'title-small'}>Categorias</Title>
 
       <Carousel>
         {categories.map((category) => (

@@ -6,9 +6,9 @@ export const AppbarSearch = () => {
   return (
     <TextInput
       className={css({ smDown: { display: 'none' }, w: 480 })}
-      leftSlot={<IconSearch />}
+      leftslot={<IconSearch />}
       placeholder="¿Qué estás buscando?"
-      rightSlot={'Ctrl+K'}
+      rightslot={'Ctrl+K'}
     />
   );
 };

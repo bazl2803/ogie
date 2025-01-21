@@ -30,20 +30,10 @@ interface Props {
   children: React.ReactNode;
 }
 
-const LayoutStyles = css({
-  display: 'grid',
-  gridTemplateColumns: {
-    base: 'repeat(4,1fr)',
-    sm: 'repeat(8,1fr)',
-    lg: 'repeat(12,1fr)',
-  },
-  columnGap: { base: '1' },
-});
-
 export default function RootLayout({ children }: Readonly<Props>) {
   return (
     <html className={`${inter.variable} ${poppins.variable}`} lang="es">
-      <body className={LayoutStyles}>
+      <body>
         <Appbar />
         {children}
       </body>
