@@ -1,7 +1,7 @@
-export { Appbar } from './appbar/appbar';
-export { AppbarLogo } from './appbar/appbar-logo';
-export { AppbarSearch } from './appbar/appbar-search';
-export { AppbarControls } from './appbar/appbar-controls';
+export { Appbar } from '../../app/components/appbar';
+export { AppbarLogo } from '../../app/components/appbar-logo';
+export { AppbarSearch } from '../../app/components/appbar-search';
+export { AppbarControls } from '../../app/components/appbar-controls';
 
 export { Avatar } from './avatar/avatar';
 

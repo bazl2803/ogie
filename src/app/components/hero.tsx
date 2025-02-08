@@ -1,3 +1,4 @@
+import { Title } from '@/features/ui/title/title';
 import { sva } from '@styled-system/css';
 
 const HeroStyles = sva({
@@ -42,11 +43,11 @@ export const Hero = () => {
   return (
     <div className={classes.root}>
       <div className={classes.background} />
-      <h1 className={classes.title}>
+      <Title variant="display-large">
         Lo que buscas,
         <br />
         lo encuentras aquí
-      </h1>
+      </Title>
     </div>
   );
 };

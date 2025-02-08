@@ -9,29 +9,24 @@ const CarouselStyles = sva({
   className: 'lukas-carousel',
   slots: ['root', 'container'],
   base: {
-    root: {},
+    root: { overflow: 'hidden' },
     container: {
       display: 'flex',
       flexDirection: 'row',
       overflowX: 'auto',
-      paddingBlock: 2,
-      gap: 2,
+      gap: 4,
       scrollSnapType: 'x mandatory',
       scrollbarWidth: 'none',
     },
   },
 });
 
-export const Carousel: React.FC<CarouselProps> = (
-  props
-) => {
+export const Carousel: React.FC<CarouselProps> = (props) => {
   const classes = CarouselStyles();
 
   return (
     <div className={classes.root}>
-      <ul className={classes.container}>
-        {props.children}
-      </ul>
+      <ul className={classes.container}>{props.children}</ul>
     </div>
   );
 };

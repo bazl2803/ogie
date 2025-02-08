@@ -1,7 +1,7 @@
-import { Carousel, CarouselItem } from '../ui';
+import { Carousel, CarouselItem } from '../../features/ui';
 
 import { CategoryCard } from './category-card';
-import { Title } from '../ui/title/title';
+import { Title } from '../../features/ui/title/title';
 import { stack } from '@styled-system/patterns';
 
 export const CategoryList = () => {

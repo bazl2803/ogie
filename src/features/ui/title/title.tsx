@@ -20,7 +20,7 @@ const titleTagsMap: Record<TitleVariant, keyof React.JSX.IntrinsicElements> = {
   'title-large': 'h4',
   'title-medium': 'h5',
   'title-small': 'h6',
-  'subtitle': 'span',
+  subtitle: 'span',
 };
 
 interface TitleProps extends React.HTMLAttributes<HTMLHeadingElement> {
@@ -32,18 +32,19 @@ interface TitleProps extends React.HTMLAttributes<HTMLHeadingElement> {
  */
 const TitleStyles = cva({
   base: {
+    color: 'neutral.800',
     fontFamily: 'poppins',
-    fontWeight: '700',
+    fontWeight: '600',
   },
   variants: {
     variant: {
       'title-small': { fontSize: 'xl' },
       'title-medium': { fontSize: '2xl' },
       'title-large': { fontSize: '3xl' },
-      'display-small': { fontSize: '4xl' },
-      'display-medium': { fontSize: '5xl' },
-      'display-large': { fontSize: '6xl' },
-      subtitle: { fontSize: 'lg', fontWeight: '600' },
+      'display-small': { fontSize: '4xl', fontWeight: '700' },
+      'display-medium': { fontSize: '5xl', fontWeight: '700' },
+      'display-large': { fontSize: '6xl', fontWeight: '700' },
+      subtitle: { fontSize: 'lg', fontWeight: '400' },
     },
   },
   defaultVariants: {

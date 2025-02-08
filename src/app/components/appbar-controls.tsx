@@ -1,5 +1,5 @@
-import { Avatar } from '../avatar';
-import { Button } from '../button';
+import { Avatar } from '../../features/ui/avatar';
+import { Button } from '../../features/ui/button';
 import { IconShoppingCart } from '@tabler/icons-react';
 import { css } from '@styled-system/css';
 
@@ -16,18 +16,16 @@ const appbarControlsStyles = css({
   gap: '2',
 });
 
-export const AppbarControls: React.FC<
-  AppbarControlsProps
-> = (props) => {
+export const AppbarControls: React.FC<AppbarControlsProps> = (props) => {
   return (
-    <div
-      className={`${props.className} ${appbarControlsStyles}`}
-    >
+    <div className={`${props.className} ${appbarControlsStyles}`}>
       <Button variant="secondary" shape="pill" size="md">
         <IconShoppingCart />
-        Carrito
       </Button>
-      <Avatar>BL</Avatar>
+
+      <Button shape="pill" size="md">
+        Iniciar Sesión
+      </Button>
     </div>
   );
 };

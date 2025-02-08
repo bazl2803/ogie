@@ -14,15 +14,26 @@ const categoryCardStyles = sva({
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      width: '96px',
       gap: 1,
+      overflow: 'visible',
+      touchAction: 'manipulation',
+      '@media (hover: hover)': {
+        _hover: {
+          '& .category-card__imageContainer': {
+            width: '7rem',
+            height: '7rem',
+          },
+        },
+      },
     },
     imageContainer: {
-      width: 24,
-      height: 24,
+      width: '6rem',
+      height: '6rem',
       position: 'relative',
       borderRadius: 'xl',
       overflow: 'hidden',
+      transitionProperty: 'width, height',
+      transitionDuration: 'normal',
     },
     image: {
       objectFit: 'cover',
@@ -38,9 +49,7 @@ const categoryCardStyles = sva({
   },
 });
 
-export const CategoryCard: React.FC<CategoryCardProps> = ({
-  displayName,
-}) => {
+export const CategoryCard: React.FC<CategoryCardProps> = ({ displayName }) => {
   const classes = categoryCardStyles();
 
   return (

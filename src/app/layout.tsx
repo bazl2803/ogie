@@ -2,7 +2,7 @@ import './globals.css';
 
 import { Inter, Poppins } from 'next/font/google';
 
-import { Appbar } from '@/features/ui/appbar/appbar';
+import { Appbar } from '@/app/components/appbar';
 import type { Metadata } from 'next';
 import React from 'react';
 

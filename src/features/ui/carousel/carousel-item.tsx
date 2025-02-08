@@ -1,3 +1,4 @@
+import React from "react";
 import { css } from '@styled-system/css';
 
 interface CarouselItemProps {
@@ -6,14 +7,8 @@ interface CarouselItemProps {
 
 const CarouselItemStyles = css({
   scrollSnapAlign: 'start',
-  position: 'relative',
-  boxSizing: 'border-box',
   overflow: 'visible',
-  userSelect: 'none',
-  transition: 'transform 0.15s, padding-inline 0.15s',
-  _hover: {
-    transform: 'scale(1.10)',
-  },
+  width: 'auto'
 });
 
 export const CarouselItem: React.FC<CarouselItemProps> = (
