@@ -1,4 +1,3 @@
-import { Avatar } from '../../features/ui/avatar';
 import { Button } from '../../features/ui/button';
 import { IconShoppingCart } from '@tabler/icons-react';
 import { css } from '@styled-system/css';

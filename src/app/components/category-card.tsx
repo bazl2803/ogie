@@ -16,7 +16,6 @@ const categoryCardStyles = sva({
       alignItems: 'center',
       gap: 1,
       overflow: 'visible',
-      touchAction: 'manipulation',
       '@media (hover: hover)': {
         _hover: {
           '& .category-card__imageContainer': {
