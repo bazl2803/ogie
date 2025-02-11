@@ -2,31 +2,31 @@ import React from 'react';
 import { sva } from '@styled-system/css';
 
 interface CarouselProps {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }
 
 const CarouselStyles = sva({
-  className: 'lukas-carousel',
-  slots: ['root', 'container'],
-  base: {
-    root: { overflow: 'hidden' },
-    container: {
-      display: 'flex',
-      flexDirection: 'row',
-      overflowX: 'auto',
-      gap: 4,
-      scrollSnapType: 'x mandatory',
-      scrollbarWidth: 'none',
-    },
-  },
+	className: 'lukas-carousel',
+	slots: ['root', 'container'],
+	base: {
+		root: { overflow: 'hidden' },
+		container: {
+			display: 'flex',
+			flexDirection: 'row',
+			overflowX: 'auto',
+			gap: { base: 2, md: 4 },
+			scrollSnapType: 'x mandatory',
+			scrollbarWidth: 'none',
+		},
+	},
 });
 
 export const Carousel: React.FC<CarouselProps> = (props) => {
-  const classes = CarouselStyles();
+	const classes = CarouselStyles();
 
-  return (
-    <div className={classes.root}>
-      <ul className={classes.container}>{props.children}</ul>
-    </div>
-  );
+	return (
+		<div className={classes.root}>
+			<ul className={classes.container}>{props.children}</ul>
+		</div>
+	);
 };

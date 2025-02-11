@@ -23,6 +23,7 @@ const buttonStyles = cva({
     outline: 'none',
     background: 'none',
     fontWeight: 'semibold',
+    textWrap: 'nowrap',
   },
   variants: {
     shape: {
@@ -76,7 +77,7 @@ const buttonStyles = cva({
       secondary: {
         backgroundColor: 'neutral.50',
         outline: '1px solid',
-        outlineColor: 'neutral.100',
+        outlineColor: 'neutral.200',
         _hover: {
           backgroundColor: 'neutral.100',
         },
