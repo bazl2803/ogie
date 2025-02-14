@@ -6,8 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/panda.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/appbar-controls.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/appbar-controls.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/appbar-search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/appbar-search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/category-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/category-list.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/title/title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/title/title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/avatar/avatar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/avatar/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/button/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/button/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/carousel/carousel-item.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/carousel/carousel.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/text-input/text-input.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/text/text.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/title/title.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,23 +45,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\bryan\\OneDrive\\Documents\\Projects\\ogie\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\bryan\\OneDrive\\Documents\\Projects\\ogie\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -112,6 +125,8 @@
       <workItem from="1737430900795" duration="2966000" />
       <workItem from="1738972298496" duration="2787000" />
       <workItem from="1739066060730" duration="6388000" />
+      <workItem from="1739247360215" duration="1603000" />
+      <workItem from="1739508270992" duration="2657000" />
     </task>
     <servers />
   </component>

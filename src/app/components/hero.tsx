@@ -1,5 +1,6 @@
 import { css, sva } from '@styled-system/css';
-import { Title } from '@/features/ui/title/title';
+
+import { Title } from '@/components/title/title';
 
 // Styles
 const HeroStyles = sva({

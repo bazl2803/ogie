@@ -1,6 +1,7 @@
-import { Button } from '../../features/ui/button';
+import { Button } from '@/components';
 import { IconShoppingCart } from '@tabler/icons-react';
 import { css } from '@styled-system/css';
+import React from "react";
 
 interface AppbarControlsProps {
   className?: string;

@@ -1,8 +1,8 @@
-import { Button, Carousel, CarouselItem } from '../../features/ui';
+import { Button, Carousel, CarouselItem } from '@/components';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 
 import { CategoryCard } from './category-card';
-import { Title } from '../../features/ui/title/title';
+import { Title } from '../../components/title/title';
 import { stack } from '@styled-system/patterns';
 
 export const CategoryList = () => {
@@ -29,7 +29,7 @@ export const CategoryList = () => {
 					justifyContent: 'space-between',
 				})}
 			>
-				<Title variant={'title-large'}>Categorias</Title>
+				<Title variant={'title-medium'}>Categorias</Title>
 
 				<div className={stack({ direction: 'row' })}>
 					<Button
