@@ -1,8 +1,7 @@
-import { Button, Carousel, CarouselItem } from '@/components';
+import { Button, Carousel, CarouselItem, Title } from '@/components';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 
 import { CategoryCard } from './category-card';
-import { Title } from '../../components/title/title';
 import { stack } from '@styled-system/patterns';
 
 export const CategoryList = () => {

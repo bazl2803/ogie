@@ -4,23 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="">
+    <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="Refactoring stuff">
+      <change afterPath="$PROJECT_DIR$/src/app/components/product-card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/avatar/avatar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/avatar/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/button/button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/button/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/card/card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/carousel/carousel-item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/carousel/carousel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/text-input/text-input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/text/text.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/title/title.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/panda.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/appbar-controls.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/appbar-controls.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/appbar-search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/appbar-search.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/category-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/category-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/avatar/avatar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/avatar/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/button/button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/button/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/carousel/carousel-item.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/carousel/carousel.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/text-input/text-input.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/text/text.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/title/title.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +34,21 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "bazl2803"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/bazl2803/ogie.git",
+    "accountId": "f0d52bed-33e0-4a72-b3a7-114be940ceeb"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -126,8 +139,17 @@
       <workItem from="1738972298496" duration="2787000" />
       <workItem from="1739066060730" duration="6388000" />
       <workItem from="1739247360215" duration="1603000" />
-      <workItem from="1739508270992" duration="2657000" />
+      <workItem from="1739508270992" duration="3487000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactoring stuff">
+      <option name="closed" value="true" />
+      <created>1739512049786</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739512049786</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,10 +160,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactoring stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring stuff" />
   </component>
 </project>
