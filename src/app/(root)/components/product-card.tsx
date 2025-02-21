@@ -1,4 +1,4 @@
-import { Card, Text, Title } from '@/components';
+import { Card, Text} from '@/components';
 import { stack } from '@styled-system/patterns';
 import Image from 'next/image';
 import React from 'react';
@@ -17,7 +17,7 @@ export const ProductCard: React.FC<ProductCardProps> = (props) => {
 				src={props.thumbnail!}
 				alt={props.thumbnail!}
 			/>
-			<Title variant="title-small">{props.name}</Title>
+			<h6>{props.name}</h6>
 
 			<div className={stack({ direction: 'row', rowGap: 1 })}>
 				<Text>{props.price}</Text>
