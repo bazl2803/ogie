@@ -1,10 +1,9 @@
+import { Display } from '@/components/atoms/display/display';
 import { css, sva } from '@styled-system/css';
-
-import { Title } from '@/components/title/title';
 
 // Styles
 const HeroStyles = sva({
-	slots: ['root', 'title', 'background'],
+	slots: ['root', 'text', 'background'],
 	base: {
 		root: {
 			display: 'flex',
@@ -30,10 +29,9 @@ const HeroStyles = sva({
 			filter: 'blur(50px)',
 			zIndex: -1,
 		},
-		title: {
-			textAlign: 'center',
-			color: 'black/60',
-		},
+		text: {
+			color: 'neutral.950/70'
+		}
 	},
 });
 
@@ -44,19 +42,9 @@ export const Hero = () => {
 	return (
 		<div className={classes.root}>
 			<div className={classes.background} />
-			<Title
-				className={classes.title}
-				variant="display-large"
-			>
-				Cientos de productos <br /> esperando por ti.
-				<br />
-			</Title>
-			<Title
-				className={css({ textAlign: 'center', color: 'red.900/50' })}
-				variant="display-large"
-			>
-				¡Descubrelos Ya!
-			</Title>
+			<Display className={classes.text}>
+				Soluciones Eléctricas <br/> para tu Hogar <br/> o Proyecto
+			</Display>
 		</div>
 	);
 };

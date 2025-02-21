@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="Refactoring stuff">
-      <change afterPath="$PROJECT_DIR$/src/app/components/product-card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/avatar/avatar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/avatar/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button/button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/card/card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/carousel/carousel-item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/carousel/carousel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/text-input/text-input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/text/text.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/title/title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/category-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/category-list.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="Refactoring stuff" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +124,7 @@
       <workItem from="1738972298496" duration="2787000" />
       <workItem from="1739066060730" duration="6388000" />
       <workItem from="1739247360215" duration="1603000" />
-      <workItem from="1739508270992" duration="3487000" />
+      <workItem from="1739508270992" duration="3751000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring stuff">
       <option name="closed" value="true" />
@@ -149,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739512049786</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactoring stuff">
+      <option name="closed" value="true" />
+      <created>1739512911244</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739512911244</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,13 +1,12 @@
-export { Avatar } from './avatar/avatar';
+export { Avatar } from './atoms/avatar/avatar';
 
-export { Button } from './button';
+export { Button } from './atoms/button';
 
-export { Card } from './card/card';
+export { Card } from './atoms/card/card';
 
-export { Carousel } from './carousel/carousel';
-export { CarouselItem } from './carousel/carousel-item';
+export { Text } from './atoms/text/text';
 
-export { Text } from './text/text';
-export { TextInput } from './text-input/text-input';
+export { Carousel } from './molecules/carousel/carousel';
+export { CarouselItem } from './molecules/carousel/carousel-item';
 
-export {Title} from './title/title'
+export { TextInput } from './molecules/text-input/text-input';

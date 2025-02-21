@@ -1,4 +1,4 @@
-import { Button, Carousel, CarouselItem, Title } from '@/components';
+import { Button, Carousel, CarouselItem } from '@/components';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 
 import { CategoryCard } from './category-card';
@@ -28,7 +28,7 @@ export const CategoryList = () => {
 					justifyContent: 'space-between',
 				})}
 			>
-				<Title variant={'title-medium'}>Categorias</Title>
+				<h3>Categorias</h3>
 
 				<div className={stack({ direction: 'row' })}>
 					<Button

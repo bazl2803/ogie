@@ -1,8 +1,8 @@
-import './globals.css';
+import '../globals.css';
 
 import { Inter, Poppins } from 'next/font/google';
 
-import { Appbar } from '@/app/components/appbar';
+import { Appbar } from '@/app/(root)/components/appbar';
 import type { Metadata } from 'next';
 import React from 'react';
 

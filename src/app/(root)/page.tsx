@@ -1,4 +1,4 @@
-import { CategoryList } from '@/app/components/category-list';
+import { CategoryList } from './components/category-list';
 import { Hero } from './components/hero';
 import { css } from '@styled-system/css';
 
