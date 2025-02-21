@@ -1,5 +1,5 @@
 import { Display } from '@/components/atoms/display/display';
-import { css, sva } from '@styled-system/css';
+import { sva } from '@styled-system/css';
 
 // Styles
 const HeroStyles = sva({
@@ -30,8 +30,8 @@ const HeroStyles = sva({
 			zIndex: -1,
 		},
 		text: {
-			color: 'neutral.950/70'
-		}
+			color: 'neutral.950/70',
+		},
 	},
 });
 
@@ -43,7 +43,7 @@ export const Hero = () => {
 		<div className={classes.root}>
 			<div className={classes.background} />
 			<Display className={classes.text}>
-				Soluciones Eléctricas <br/> para tu Hogar <br/> o Proyecto
+				Soluciones Eléctricas <br /> para tu Hogar <br /> o Proyecto
 			</Display>
 		</div>
 	);
