@@ -1,4 +1,4 @@
-import { Card, Text} from '@/components';
+import { Card, Text } from '@/components';
 import { stack } from '@styled-system/patterns';
 import Image from 'next/image';
 import React from 'react';

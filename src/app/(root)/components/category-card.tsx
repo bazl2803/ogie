@@ -4,6 +4,7 @@ import { sva } from '@styled-system/css';
 
 interface CategoryCardProps {
 	title: string;
+	imageUrl?: string;
 }
 
 const categoryCardStyles = sva({
@@ -41,7 +42,7 @@ const categoryCardStyles = sva({
 			objectFit: 'cover',
 		},
 		title: {
-			fontSize: { base: 'xs', md: 'xs' },
+			fontSize: { base: 'sm', md: 'sm' },
 			whiteSpace: 'nowrap',
 			overflow: 'hidden',
 			textOverflow: 'ellipsis',
@@ -51,7 +52,10 @@ const categoryCardStyles = sva({
 	},
 });
 
-export const CategoryCard: React.FC<CategoryCardProps> = ({ title }) => {
+export const CategoryCard: React.FC<CategoryCardProps> = ({
+	title,
+	imageUrl,
+}) => {
 	const classes = categoryCardStyles();
 
 	return (
@@ -59,7 +63,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ title }) => {
 			<div className={classes.imageContainer}>
 				<Image
 					className={classes.image}
-					src={`/${title.toLowerCase()}.jpg`}
+					src={imageUrl!}
 					alt={title}
 					sizes="256px"
 					fill

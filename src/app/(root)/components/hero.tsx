@@ -13,7 +13,6 @@ const HeroStyles = sva({
 			overflow: 'visible',
 			width: '100%',
 			userSelect: 'none',
-			paddingBlock: { base: '4rem', md: '5rem' },
 		},
 		background: {
 			position: 'absolute',
@@ -31,6 +30,7 @@ const HeroStyles = sva({
 		},
 		text: {
 			color: 'neutral.950/70',
+			textAlign: { base: 'center', md: 'left' },
 		},
 	},
 });
@@ -42,7 +42,10 @@ export const Hero = () => {
 	return (
 		<div className={classes.root}>
 			<div className={classes.background} />
-			<Display className={classes.text}>
+			<Display
+				size="huge"
+				className={classes.text}
+			>
 				Soluciones Eléctricas <br /> para tu Hogar <br /> o Proyecto
 			</Display>
 		</div>

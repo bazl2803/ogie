@@ -2,40 +2,48 @@ import '../globals.css';
 
 import { Inter, Poppins } from 'next/font/google';
 
-import { Appbar } from '@/app/(root)/components/appbar';
+import { Appbar } from './components/appbar';
 import type { Metadata } from 'next';
 import React from 'react';
+import { flex } from '@styled-system/patterns';
+import clsx from 'clsx';
 
 export const metadata: Metadata = {
-  title: 'Ogie',
-  description: 'Everything what you want',
+	title: 'Ogie',
+	description: 'Everything what you want',
 };
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap',
-  variable: '--font-poppins',
+	subsets: ['latin'],
+	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+	display: 'swap',
+	variable: '--font-poppins',
 });
 
 const inter = Inter({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap',
-  variable: '--font-inter',
+	subsets: ['latin'],
+	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+	display: 'swap',
+	variable: '--font-inter',
 });
 
 interface Props {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: Readonly<Props>) {
-  return (
-    <html className={`${inter.variable} ${poppins.variable}`} lang="es">
-      <body>
-        <Appbar />
-        {children}
-      </body>
-    </html>
-  );
+	const classes = clsx(
+		flex({ direction: 'column', rowGap: 8 }),
+		inter.className,
+		poppins.className
+	);
+
+	return (
+		<html lang="es">
+			<body className={classes}>
+				<Appbar />
+				{children}
+			</body>
+		</html>
+	);
 }
