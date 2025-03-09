@@ -23,9 +23,9 @@ export const AppbarControls: React.FC<AppbarControlsProps> = (props) => {
 				variant="secondary"
 				shape="pill"
 				size="md"
-			>
-				<IconShoppingCart />
-			</Button>
+				icon={<IconShoppingCart />}
+				icon-position={'left'}
+			/>
 
 			<Button
 				shape="pill"

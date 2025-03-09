@@ -32,16 +32,14 @@ export const CategoryList = () => {
 					<Button
 						variant="secondary"
 						shape="pill"
-					>
-						<IconChevronLeft />
-					</Button>
+						icon={<IconChevronLeft />}
+					/>
 
 					<Button
 						variant="secondary"
 						shape="pill"
-					>
-						<IconChevronRight />
-					</Button>
+						icon={<IconChevronRight />}
+					/>
 				</div>
 			</div>
 
