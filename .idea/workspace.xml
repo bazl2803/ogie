@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="Refactoring stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/heading/heading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/heading/heading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/appbar-search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/appbar-search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/appbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/appbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/category-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/category-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +54,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;typography&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;layout&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -103,7 +107,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-WS-243.24978.60" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
       </set>
     </attachedChunks>
   </component>
@@ -131,6 +135,7 @@
       <workItem from="1740110074405" duration="2156000" />
       <workItem from="1740156064740" duration="877000" />
       <workItem from="1740160167140" duration="210000" />
+      <workItem from="1742355456887" duration="4784000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring stuff">
       <option name="closed" value="true" />
