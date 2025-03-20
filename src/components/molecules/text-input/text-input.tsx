@@ -26,7 +26,7 @@ const TextInputStyles = sva({
 		input: {
 			border: 'none',
 			outline: 'none',
-			flexGrow: 1,
+			width: '100%',
 		},
 		inputSlot: {
 			flexGrow: 1,
