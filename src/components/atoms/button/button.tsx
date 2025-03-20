@@ -1,5 +1,6 @@
 import { HTMLAttributes } from 'react';
 import { cva } from '@styled-system/css';
+import clsx from 'clsx';
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
 	ref?: React.Ref<HTMLButtonElement>;
@@ -89,13 +90,18 @@ export const Button: React.FC<ButtonProps> = ({
 	size,
 	...rest
 }) => {
+	const classes = clsx(
+		buttonStyles({
+			variant,
+			shape,
+			size,
+		}),
+		className
+	);
+
 	return (
 		<button
-			className={buttonStyles({
-				variant,
-				shape,
-				size,
-			})}
+			className={classes}
 			{...rest}
 		>
 			{icon && <div>{icon}</div>}
