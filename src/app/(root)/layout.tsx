@@ -36,7 +36,7 @@ export default function RootLayout({ children }: Readonly<Props>) {
 		flex({
 			direction: 'column',
 			rowGap: '16px',
-			backgroundColor: 'neutral.50',
+			backgroundColor: 'white',
 		}),
 		inter.className,
 		poppins.className

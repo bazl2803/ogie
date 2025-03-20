@@ -30,6 +30,7 @@ const TextInputStyles = sva({
 		},
 		inputSlot: {
 			flexGrow: 1,
+			flexShrink: 1,
 		},
 		slot: {
 			display: 'flex',
