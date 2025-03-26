@@ -30,8 +30,8 @@ const categoryCardStyles = sva({
 			},
 		},
 		imageContainer: {
-			width: { base: '4rem' },
-			height: { base: '4rem' },
+			width: { base: '5rem', md: '5.5rem' },
+			height: { base: '5rem', md: '5.5rem' },
 			position: 'relative',
 			borderRadius: 'xl',
 			overflow: 'hidden',
