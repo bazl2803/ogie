@@ -20,8 +20,8 @@ const categoryCardStyles = sva({
 			'@media (hover: hover)': {
 				_hover: {
 					'& .category-card__imageContainer': {
-						width: { base: '6rem', md: '7rem' },
-						height: { base: '6rem', md: '7rem' },
+						width: { base: '6rem' },
+						height: { base: '6rem' },
 					},
 				},
 			},
@@ -30,8 +30,8 @@ const categoryCardStyles = sva({
 			},
 		},
 		imageContainer: {
-			width: { base: '5rem', md: '6.5rem' },
-			height: { base: '5rem', md: '6.5rem' },
+			width: { base: '4rem' },
+			height: { base: '4rem' },
 			position: 'relative',
 			borderRadius: 'xl',
 			overflow: 'hidden',

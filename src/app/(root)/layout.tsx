@@ -35,8 +35,9 @@ export default function RootLayout({ children }: Readonly<Props>) {
 	const classes = clsx(
 		flex({
 			direction: 'column',
-			rowGap: '16px',
-			backgroundColor: 'white',
+			alignItems: 'stretch',
+			rowGap: '4',
+			backgroundColor: 'neutral.50',
 		}),
 		inter.className,
 		poppins.className

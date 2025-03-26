@@ -15,18 +15,25 @@ const TextInputStyles = sva({
 			alignItems: 'center',
 			flexDirection: 'row',
 			flexWrap: 'nowrap',
-			backgroundColor: 'neutral.50',
+			backgroundColor: 'white',
 			paddingInline: 4,
 			paddingBlock: 2,
 			outline: '1px solid',
-			outlineColor: 'neutral.200',
+			outlineColor: 'neutral.100',
 			borderRadius: 'lg',
 			gap: 4,
+			color: 'neutral.400',
+			'&:focus-within': {
+				color: 'neutral.600',
+			},
 		},
 		input: {
 			border: 'none',
 			outline: 'none',
 			width: '100%',
+			'&::placeholder': {
+				color: 'neutral.400',
+			},
 		},
 		inputSlot: {
 			flexGrow: 1,

@@ -32,9 +32,9 @@ const buttonStyles = cva({
 			},
 			outline: {
 				color: 'neutral.950',
-				bg: 'transparent',
+				bg: 'white',
 				border: '1px solid',
-				borderColor: 'neutral.950',
+				borderColor: 'neutral.100',
 			},
 			ghost: {
 				color: 'neutral.950',

@@ -10,8 +10,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@auth/neon-adapter": "^1.8.0",
     "@neondatabase/serverless": "^0.10.4",
+=======
+    "@emotion/react": "^11.14.0",
+>>>>>>> layout
     "@prisma/client": "^6.2.1",
     "@tabler/icons-react": "^3.24.0",
     "clsx": "^2.1.1",

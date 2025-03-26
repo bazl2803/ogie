@@ -8,7 +8,7 @@ interface TitleProps extends React.HTMLAttributes<HTMLDivElement> {
 const TitleStyles = cva({
 	base: {
 		fontFamily: 'inter',
-		fontWeight: '500',
+		fontWeight: '700',
 	},
 	variants: {
 		level: {
