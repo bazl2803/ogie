@@ -12,7 +12,6 @@ export const AppbarSearch = () => {
 			})}
 			leftSlot={<IconSearch />}
 			placeholder="¿Qué estás buscando?"
-			rightSlot={'Ctrl+K'}
 		/>
 	);
 };

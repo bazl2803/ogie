@@ -1,5 +1,5 @@
 import { Button } from '@/components';
-import { IconShoppingCart } from '@tabler/icons-react';
+import { IconShoppingCart, IconUser } from '@tabler/icons-react';
 import { css } from '@styled-system/css';
 import React from 'react';
 
@@ -20,7 +20,7 @@ export const AppbarControls: React.FC<AppbarControlsProps> = (props) => {
 	return (
 		<div className={`${props.className} ${appbarControlsStyles}`}>
 			<Button
-				variant="secondary"
+				variant="outline"
 				shape="pill"
 				size="md"
 				icon={<IconShoppingCart />}
@@ -28,11 +28,11 @@ export const AppbarControls: React.FC<AppbarControlsProps> = (props) => {
 			/>
 
 			<Button
+				variant="outline"
 				shape="pill"
 				size="md"
-			>
-				Iniciar Sesión
-			</Button>
+				icon={<IconUser />}
+			/>
 		</div>
 	);
 };
