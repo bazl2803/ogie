@@ -14,7 +14,7 @@ const CarouselStyles = sva({
 			display: 'flex',
 			flexDirection: 'row',
 			overflowX: 'auto',
-			gap: { base: 2, md: 4 },
+			gap: { base: 4, md: 5 },
 			scrollSnapType: 'x mandatory',
 			scrollbarWidth: 'none',
 		},

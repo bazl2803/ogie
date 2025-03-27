@@ -2,7 +2,7 @@ import '../globals.css';
 
 import { Inter, Poppins } from 'next/font/google';
 
-import { Appbar } from './components/appbar';
+import { MainAppbar } from './components/main-appbar';
 import type { Metadata } from 'next';
 import React from 'react';
 import { flex } from '@styled-system/patterns';
@@ -46,7 +46,7 @@ export default function RootLayout({ children }: Readonly<Props>) {
 	return (
 		<html lang="es">
 			<body className={classes}>
-				<Appbar />
+				<MainAppbar />
 				{children}
 			</body>
 		</html>
