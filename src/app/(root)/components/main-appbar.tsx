@@ -1,51 +1,76 @@
-import React from "react";
-import { AppbarControls } from './appbar-controls';
-import { AppbarLogo } from './appbar-logo';
-import { AppbarSearch } from './appbar-search';
-import clsx from 'clsx';
-import { sva } from '@styled-system/css';
+import { Appbar, Button, TextInput } from '@/components';
+import { css } from '@styled-system/css';
+import { stack } from '@styled-system/patterns';
+import { IconSearch, IconShoppingCart, IconUser } from '@tabler/icons-react';
+import Image from 'next/image';
+import React from 'react';
 
-interface AppbarProps {
-	ref?: React.Ref<HTMLDivElement>;
-}
+/*
+ * Logo component
+ */
+const Logo = () => (
+	<Image
+		className={css({ mixBlendMode: 'multiply' })}
+		style={{ height: '32px', width: 'auto' }}
+		src="/sumi_logo.jpg"
+		alt="logo"
+		width={100}
+		height={100}
+	/>
+);
 
-const appbarStyles = sva({
-	className: 'lukas-appbar',
-	slots: ['root', 'content'],
-	base: {
-		root: {
-			position: 'sticky',
-			top: 0,
-			zIndex: 1000,
-			backgroundColor: 'neutral.50',
-			backdropFilter: 'blur(8px)',
-		},
-		content: {
-			display: 'flex',
-			flexDirection: 'row',
-			flexWrap: 'wrap',
-			justifyContent: 'space-between',
-			alignItems: 'center',
-			marginInline: 4,
-			paddingBlock: 4,
-			gap: 4,
-		},
-	},
-});
+/*
+ * Search input component
+ */
+const SearchInput = () => (
+	<TextInput
+		className={css({
+			w: { base: '100%', md: 80, lg: '1/3' },
+			order: { base: 2, md: 0 },
+			flexGrow: { mdDown: 1 },
+		})}
+		leftSlot={<IconSearch />}
+		placeholder="¿Qué estás buscando?"
+	/>
+);
 
-export const Appbar: React.FC<AppbarProps> = (props) => {
-	const classes = appbarStyles();
+/*
+ * Buttons component
+ */
+const Buttons = () => (
+	<div className={stack({ direction: 'row' })}>
+		<Button
+			variant="outline"
+			shape="pill"
+			size="md"
+			icon={<IconShoppingCart />}
+			icon-position={'left'}
+		/>
 
+		<Button
+			variant="outline"
+			shape="pill"
+			size="md"
+			icon={<IconUser />}
+		/>
+	</div>
+);
+
+/*
+ * Main Appbar component
+ */
+export const MainAppbar = () => {
 	return (
-		<div
-			ref={props.ref}
-			className={classes.root}
-		>
-			<div className={clsx(classes.content)}>
-				<AppbarLogo />
-				<AppbarSearch />
-				<AppbarControls />
-			</div>
-		</div>
+		<Appbar>
+			<Appbar.Section>
+				<Logo />
+			</Appbar.Section>
+			<Appbar.Section>
+				<SearchInput />
+			</Appbar.Section>
+			<Appbar.Section>
+				<Buttons />
+			</Appbar.Section>
+		</Appbar>
 	);
 };

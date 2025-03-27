@@ -5,17 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="Refactoring stuff">
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/container/container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecules/appbar/appbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecules/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/appbar-search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/appbar-search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/appbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/appbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/category-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/category-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/appbar-controls.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/appbar-logo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/appbar-search.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/appbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/main-appbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(root)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/carousel/carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/text-input/text-input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/text-input/text-input.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="false" />
@@ -136,6 +153,7 @@
       <workItem from="1740156064740" duration="877000" />
       <workItem from="1740160167140" duration="210000" />
       <workItem from="1742355456887" duration="4784000" />
+      <workItem from="1743005064114" duration="18613000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring stuff">
       <option name="closed" value="true" />
