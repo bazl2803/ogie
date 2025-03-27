@@ -1,3 +1,4 @@
+import React from "react";
 import { AppbarControls } from './appbar-controls';
 import { AppbarLogo } from './appbar-logo';
 import { AppbarSearch } from './appbar-search';
@@ -18,11 +19,6 @@ const appbarStyles = sva({
 			zIndex: 1000,
 			backgroundColor: 'neutral.50',
 			backdropFilter: 'blur(8px)',
-			paddingInline: {
-				base: 4,
-				md: 8,
-				lg: 12,
-			},
 		},
 		content: {
 			display: 'flex',
@@ -30,8 +26,7 @@ const appbarStyles = sva({
 			flexWrap: 'wrap',
 			justifyContent: 'space-between',
 			alignItems: 'center',
-			maxWidth: '6xl',
-			margin: 'auto',
+			marginInline: 4,
 			paddingBlock: 4,
 			gap: 4,
 		},
