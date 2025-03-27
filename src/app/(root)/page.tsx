@@ -6,9 +6,7 @@ export default function Home() {
 	return (
 		<div
 			className={stack({
-				maxWidth: '6xl',
 				width: '100%',
-				marginInline: 'auto',
 				rowGap: 8,
 			})}
 		>

@@ -19,7 +19,7 @@ const TextInputStyles = sva({
 			paddingInline: 4,
 			paddingBlock: 2,
 			outline: '1px solid',
-			outlineColor: 'neutral.100',
+			outlineColor: 'neutral.200',
 			borderRadius: 'lg',
 			gap: 4,
 			color: 'neutral.400',
