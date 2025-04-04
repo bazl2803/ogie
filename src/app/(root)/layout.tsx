@@ -1,12 +1,11 @@
-import '../globals.css';
-
-import { Inter, Poppins } from 'next/font/google';
-
-import { MainAppbar } from './components/main-appbar';
-import type { Metadata } from 'next';
-import React from 'react';
 import { flex } from '@styled-system/patterns';
 import clsx from 'clsx';
+import type { Metadata } from 'next';
+import { Inter, Poppins } from 'next/font/google';
+import React from 'react';
+import '../globals.css';
+import { Header } from './components/header';
+import { css } from '@styled-system/css';
 
 export const metadata: Metadata = {
 	title: 'Ogie',
@@ -37,16 +36,19 @@ export default function RootLayout({ children }: Readonly<Props>) {
 			direction: 'column',
 			alignItems: 'stretch',
 			rowGap: '4',
-			backgroundColor: 'neutral.50',
+			backgroundColor: 'white',
 		}),
 		inter.className,
 		poppins.className
 	);
 
 	return (
-		<html lang="es">
+		<html
+			lang="es"
+			className={css({ fontSize: { base: '14px', md: '16px' } })}
+		>
 			<body className={classes}>
-				<MainAppbar />
+				<Header />
 				{children}
 			</body>
 		</html>

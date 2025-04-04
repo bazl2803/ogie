@@ -1,9 +1,7 @@
-import { Button, Carousel, CarouselItem } from '@/components';
+import { Button, Carousel, CarouselItem, Title } from '@/components';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
-
-import { CategoryCard } from './category-card';
 import { stack } from '@styled-system/patterns';
-import { Title } from '@/components/atoms/title/title';
+import { CategoryCard } from './category-card';
 
 export const CategoryList = () => {
 	const categories = [
@@ -18,7 +16,7 @@ export const CategoryList = () => {
 	];
 
 	return (
-		<div className={stack({marginInline: '16px'})}>
+		<div className={stack({ marginInline: '16px' })}>
 			<div
 				className={stack({
 					direction: 'row',

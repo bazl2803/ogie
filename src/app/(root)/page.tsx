@@ -1,6 +1,5 @@
 import { stack } from '@styled-system/patterns';
-import { CategoryList } from './components/category-list';
-import { Hero } from './components/hero';
+import { CategoryList } from '@/components/organisms/categories/category-list';
 
 export default function Home() {
 	return (
@@ -10,7 +9,6 @@ export default function Home() {
 				rowGap: 8,
 			})}
 		>
-			<Hero />
 			<CategoryList />
 		</div>
 	);

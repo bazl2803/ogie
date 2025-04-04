@@ -20,35 +20,12 @@ const Logo = () => (
 );
 
 /*
- * Search input component
- */
-const SearchInput = () => (
-	<TextInput
-		className={css({
-			w: { base: '100%', md: 80, lg: '1/3' },
-			order: { base: 2, md: 0 },
-			flexGrow: { mdDown: 1 },
-		})}
-		leftSlot={<IconSearch />}
-		placeholder="¿Qué estás buscando?"
-	/>
-);
-
-/*
  * Buttons component
  */
 const Buttons = () => (
 	<div className={stack({ direction: 'row' })}>
 		<Button
-			variant="outline"
-			shape="pill"
-			size="md"
-			icon={<IconShoppingCart />}
-			icon-position={'left'}
-		/>
-
-		<Button
-			variant="outline"
+			variant="secondary"
 			shape="pill"
 			size="md"
 			icon={<IconUser />}
@@ -64,9 +41,6 @@ export const MainAppbar = () => {
 		<Appbar>
 			<Appbar.Section>
 				<Logo />
-			</Appbar.Section>
-			<Appbar.Section>
-				<SearchInput />
 			</Appbar.Section>
 			<Appbar.Section>
 				<Buttons />

@@ -8,18 +8,17 @@ interface TextInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 }
 
 const TextInputStyles = sva({
-	slots: ['root', 'slot', 'input', 'inputSlot'],
+	slots: ['root', 'slot', 'input'],
 	base: {
 		root: {
 			display: 'flex',
 			alignItems: 'center',
 			flexDirection: 'row',
 			flexWrap: 'nowrap',
-			backgroundColor: 'white',
+			backgroundColor: 'gray.50',
 			paddingInline: 4,
 			paddingBlock: 2,
-			outline: '1px solid',
-			outlineColor: 'neutral.200',
+			outline: 'none',
 			borderRadius: 'lg',
 			gap: 4,
 			color: 'neutral.400',
@@ -28,24 +27,21 @@ const TextInputStyles = sva({
 			},
 		},
 		input: {
+			width: 'full',
 			border: 'none',
 			outline: 'none',
-			width: '100%',
+			fontSize: '1rem',
 			'&::placeholder': {
 				color: 'neutral.400',
 			},
-		},
-		inputSlot: {
-			flexGrow: 1,
-			flexShrink: 1,
 		},
 		slot: {
 			display: 'flex',
 			alignItems: 'center',
 			justifyContent: 'center',
 			'& svg': {
-				width: 4,
-				height: 4,
+				width: '1rem',
+				height: '1rem',
 			},
 		},
 	},
@@ -62,7 +58,7 @@ export const TextInput: React.FC<TextInputProps> = ({
 	return (
 		<div className={`${classes.root} ${className}`}>
 			<div className={classes.slot}>{leftSlot}</div>
-			<div className={classes.inputSlot}>
+			<div className={classes.slot}>
 				<input
 					className={classes.input}
 					type="text"
