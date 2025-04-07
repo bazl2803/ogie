@@ -14,6 +14,7 @@
     "@prisma/client": "^6.2.1",
     "@tabler/icons-react": "^3.24.0",
     "clsx": "^2.1.1",
+    "esbuild": "^0.25.2",
     "next": "^15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
