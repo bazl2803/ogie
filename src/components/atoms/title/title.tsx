@@ -13,12 +13,12 @@ const TitleStyles = cva({
 	},
 	variants: {
 		level: {
-			1: { fontSize: '1.938rem' },
-			2: { fontSize: '1.563rem' },
-			3: { fontSize: '1.25rem' },
-			4: { fontSize: '1.25rem' },
-			5: { fontSize: '1.25rem' },
-			6: { fontSize: '1.25rem' },
+			1: { fontSize: '2rem' },
+			2: { fontSize: '1.786rem' },
+			3: { fontSize: '1.571rem' },
+			4: { fontSize: '1.429rem' },
+			5: { fontSize: '1.286rem' },
+			6: { fontSize: '1.143rem' },
 		},
 	},
 	defaultVariants: {

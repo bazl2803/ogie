@@ -24,21 +24,7 @@ export const CategoryList = () => {
 					justifyContent: 'space-between',
 				})}
 			>
-				<Title level={3}>Categorias</Title>
-
-				<div className={stack({ direction: 'row' })}>
-					<Button
-						variant="secondary"
-						shape="pill"
-						icon={<IconChevronLeft />}
-					/>
-
-					<Button
-						variant="secondary"
-						shape="pill"
-						icon={<IconChevronRight />}
-					/>
-				</div>
+				<Title level={6}>Categorias</Title>
 			</div>
 
 			<Carousel>

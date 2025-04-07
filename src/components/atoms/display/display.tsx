@@ -9,13 +9,16 @@ const DisplayStyles = cva({
 	base: {
 		fontFamily: 'inter',
 		fontWeight: '800',
-		fontSize: '2.25rem',
+		lineHeight: 'tight',
 	},
 	variants: {
 		size: {
-			huge: { fontSize: '2.875rem' },
-			large: { fontSize: '2.563rem' },
+			huge: { fontSize: '2rem' },
+			large: { fontSize: '1.786rem' },
 		},
+	},
+	defaultVariants: {
+		size: 'large',
 	},
 });
 

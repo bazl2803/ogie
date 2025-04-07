@@ -1,7 +1,7 @@
-import { Appbar, Button, TextInput } from '@/components';
+import { Appbar, Button } from '@/components';
 import { css } from '@styled-system/css';
 import { stack } from '@styled-system/patterns';
-import { IconSearch, IconShoppingCart, IconUser } from '@tabler/icons-react';
+import { IconUser } from '@tabler/icons-react';
 import Image from 'next/image';
 import React from 'react';
 
