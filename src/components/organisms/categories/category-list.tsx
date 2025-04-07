@@ -1,5 +1,4 @@
-import { Button, Carousel, CarouselItem, Title } from '@/components';
-import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
+import { Carousel, CarouselItem, Title } from '@/components';
 import { stack } from '@styled-system/patterns';
 import { CategoryCard } from './category-card';
 
