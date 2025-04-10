@@ -8,7 +8,7 @@ const HeroStyles = css({
 
 export const Hero = () => {
 	return (
-		<Display className={HeroStyles}>
+		<Display className={HeroStyles} size="4xl">
 			Soluciones Eléctricas
 			<br /> para su Hogar <br />o Proyecto.
 		</Display>

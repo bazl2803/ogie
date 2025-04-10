@@ -15,7 +15,7 @@ export const CategoryList = () => {
 	];
 
 	return (
-		<div className={stack({ marginInline: '16px' })}>
+		<div className={stack({ marginLeft: '16px' })}>
 			<div
 				className={stack({
 					direction: 'row',
