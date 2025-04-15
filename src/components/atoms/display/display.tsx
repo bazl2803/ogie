@@ -2,7 +2,7 @@ import { cva } from '@styled-system/css';
 import React from 'react';
 
 interface DisplayProps extends React.HTMLAttributes<HTMLDivElement> {
-	size?: '4xl' | '3xl' | '2xl' | 'xl' | 'lg' | 'md' | 'sm' | 'xs';
+	size?: 'large' | 'huge';
 }
 
 const DisplayStyles = cva({
@@ -13,18 +13,13 @@ const DisplayStyles = cva({
 	},
 	variants: {
 		size: {
-			'4xl': { fontSize: '2rem' },
-			'3xl': { fontSize: '1.786rem' },
-			'2xl': { fontSize: '1.571rem' },
-			xl: { fontSize: '1.357rem' },
-			lg: { fontSize: '1.143rem' },
-			md: { fontSize: '1rem' },
-			sm: { fontSize: '0.857rem' },
-			xs: { fontSize: '0.714rem' },
+			huge: { fontSize: '2rem' },
+			large: { fontSize: '1.786rem' },
+			
 		},
 	},
 	defaultVariants: {
-		size: 'xl',
+		size: 'large',
 	},
 });
 

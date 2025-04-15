@@ -1,4 +1,4 @@
-import { Appbar, Button } from '@/components';
+import { Appbar, Button } from '@/modules/core/design-system';
 import { css } from '@styled-system/css';
 import { stack } from '@styled-system/patterns';
 import { IconUser } from '@tabler/icons-react';

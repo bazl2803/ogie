@@ -1,4 +1,4 @@
-import { TextInput } from '@/components';
+import { TextInput } from '@/modules/core/design-system';
 import { css } from '@styled-system/css';
 import { IconSearch } from '@tabler/icons-react';
 

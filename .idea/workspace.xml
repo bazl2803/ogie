@@ -5,21 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="Refactoring stuff">
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/container/container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/appbar/appbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/appbar-controls.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/appbar-logo.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/appbar-search.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/appbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/main-appbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(root)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/panda.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/main-appbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/main-appbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/search-box.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/carousel/carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/text-input/text-input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/text-input/text-input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/avatar/avatar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/avatar/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/button/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/button/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/card/card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/card/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/container/container.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/container/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/display/display.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/display/display.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/display/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/title/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/title/title.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/appbar/appbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/carousel/carousel-item.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/carousel/carousel.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/text-input/text-input.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/categories/category-card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/categories/category-list.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +141,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
       </set>
     </attachedChunks>
   </component>
@@ -154,6 +171,8 @@
       <workItem from="1740160167140" duration="210000" />
       <workItem from="1742355456887" duration="4784000" />
       <workItem from="1743005064114" duration="18613000" />
+      <workItem from="1744675746394" duration="3594000" />
+      <workItem from="1744682149578" duration="6480000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring stuff">
       <option name="closed" value="true" />
@@ -188,7 +207,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="layout" />
                       </list>
                     </value>
                   </entry>

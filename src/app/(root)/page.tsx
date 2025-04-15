@@ -1,5 +1,5 @@
 import { stack } from '@styled-system/patterns';
-import { CategoryList } from '@/components/organisms/categories/category-list';
+import { CategoryList } from '@/modules/category/category-list';
 
 export default function Home() {
 	return (

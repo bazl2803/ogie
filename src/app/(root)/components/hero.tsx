@@ -1,4 +1,4 @@
-import { Display } from '@/components';
+import { Display } from '@/modules/core/design-system';
 import { css } from '@styled-system/css';
 
 // Styles
