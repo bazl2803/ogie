@@ -16,11 +16,12 @@ const TextInputStyles = sva({
 			flexDirection: 'row',
 			flexWrap: 'nowrap',
 			backgroundColor: 'gray.50',
-			padding: '12px',
+			paddingInline: '12px',
 			outline: 'none',
 			borderRadius: 'xl',
 			gap: '8px',
 			color: 'neutral.400',
+			transition: 'color 0.2s ease-in-out',
 			'&:focus-within': {
 				color: 'neutral.600',
 			},
@@ -30,9 +31,15 @@ const TextInputStyles = sva({
 			border: 'none',
 			outline: 'none',
 			fontSize: '1rem',
-			'&::placeholder': {
+			transition: 'color 0.2s ease-in-out',
+			_placeholder: {
 				color: 'neutral.400',
 			},
+			_focus: {
+				_placeholder: {
+					color: 'neutral.600',
+				}
+			}
 		},
 		slot: {
 			display: 'flex',

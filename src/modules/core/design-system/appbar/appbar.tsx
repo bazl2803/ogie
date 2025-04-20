@@ -3,14 +3,12 @@ import { css } from '@styled-system/css';
 import clsx from 'clsx';
 
 type AppbarProps = React.HTMLProps<HTMLDivElement>;
-type AppbarSectionProps = {
-	grow?: boolean;
-} & React.HTMLProps<HTMLDivElement>;
+type AppbarSectionProps = React.HTMLProps<HTMLDivElement>;
 
 const AppbarStyles = css({
 	display: 'flex',
 	flexDirection: 'row',
-	flexWrap: 'wrap',
+	flexWrap: 'nowrap',
 	overflow: 'hidden',
 	justifyContent: 'space-between',
 	alignItems: 'center',
@@ -29,11 +27,10 @@ const Appbar = ({ className, ...props }: AppbarProps) => {
 	);
 };
 
-const Section = ({ className, grow, ...props }: AppbarSectionProps) => {
+const Section = ({ className, ...props }: AppbarSectionProps) => {
 	return (
 		<div
 			className={clsx('lukas-appbarsection', className)}
-			style={{ flexGrow: grow ? 1 : 0 }}
 			{...props}
 		/>
 	);

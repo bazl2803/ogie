@@ -6,10 +6,17 @@ export const SearchBox = () => {
 	return (
 		<div
 			className={css({
-				marginInline: '4',
+				maxWidth: '28rem',
+				width: '28rem',
+				height: '2.5rem',
+				'& input': {
+					width: 'full',
+					height: 'full',
+				},
 			})}
 		>
 			<TextInput
+				className={css({ width: 'full', height: 'full' })}
 				leftSlot={<IconSearch fontWeight={600} />}
 				placeholder="¿Qué desea encontrar?"
 			/>

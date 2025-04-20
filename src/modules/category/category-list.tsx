@@ -6,11 +6,11 @@ import clsx from 'clsx';
 export const CategoryList = () => {
 	const categories = [
 		{ title: 'Iluminación', image: '/spotlight.webp' },
-		{ title: 'Interruptores', image: '/switch.jpeg' },
 		{ title: 'Tomacorrientes', image: '/outlet.jpeg' },
+		{ title: 'Interruptores', image: '/switch.jpeg' },
+		{ title: 'Dados', image: '/pole.webp' },
 		{ title: 'Receptáculos', image: '/socket.jpeg' },
 		{ title: 'Cables', image: '/wires.jpeg' },
-		{ title: 'Dados', image: '/pole.webp' },
 		{ title: 'Canaletas', image: '/conduit.webp' },
 		{ title: 'Herramientas', image: '/tools.webp' },
 	];

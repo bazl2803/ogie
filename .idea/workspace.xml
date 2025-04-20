@@ -6,37 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="Refactoring stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/panda.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/main-appbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/main-appbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/components/search-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/hero.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/main-appbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/components/search-box.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/auth/[...nextauth]/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/avatar/avatar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/avatar/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/button/button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/button/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/card/card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/card/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/container/container.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/container/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/display/display.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/display/display.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/display/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/title/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/title/title.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/appbar/appbar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/carousel/carousel-item.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/carousel/carousel.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/text-input/text-input.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/categories/category-card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/categories/category-list.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/display/display.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/category/category-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/category/category-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/category/category-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/category/category-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/appbar/appbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/design-system/appbar/appbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/button/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/design-system/button/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/design-system/carousel/carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/display/display.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/design-system/display/display.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/text-input/text-input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/design-system/text-input/text-input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/product/product-showcase/product-showcase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/product-showcase/product-showcase.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,23 +68,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;layout&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.build.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\bryan\\OneDrive\\Documents\\Projects\\ogie\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dev",
+    "js.debugger.nextJs.config.created.client": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\bryan\\OneDrive\\Documents\\Projects\\ogie\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -111,6 +96,9 @@
     </option>
   </component>
   <component name="RunManager" selected="npm.dev">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -141,7 +129,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
       </set>
     </attachedChunks>
   </component>
@@ -173,6 +161,8 @@
       <workItem from="1743005064114" duration="18613000" />
       <workItem from="1744675746394" duration="3594000" />
       <workItem from="1744682149578" duration="6480000" />
+      <workItem from="1745014194305" duration="1513000" />
+      <workItem from="1745016651558" duration="5870000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring stuff">
       <option name="closed" value="true" />
