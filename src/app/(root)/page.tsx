@@ -39,17 +39,21 @@ export default function Home() {
 			>
 				<CategoryList />
 
-				<div className={css({
-					display: 'grid',
-					paddingInline: '1rem',
-					gridTemplateColumns: {
-						base: 'repeat(4, 1fr)',
-						md: 'repeat(8, 1fr)',
-						lg: 'repeat(12, 1fr)'
-					},
-					width: 'full',
-					gap: 8
-				})}>
+				<div
+					className={css({
+						display: 'grid',
+						paddingInline: '1rem',
+						gridTemplateColumns: {
+							base: 'repeat(4, 1fr)',
+							md: 'repeat(8, 1fr)',
+							lg: 'repeat(12, 1fr)',
+						},
+						width: 'full',
+						maxWidth: '1200px',
+						marginInline: 'auto',
+						gap: 8,
+					})}
+				>
 					<ProductShowcase
 						products={[...products]}
 						title={'Mas Vendidos'}
@@ -60,7 +64,7 @@ export default function Home() {
 					/>
 					<ProductShowcase
 						products={[...products]}
-						title={'Últimos Arribos'}
+						title={'Recien Llegados'}
 					/>
 				</div>
 			</div>
