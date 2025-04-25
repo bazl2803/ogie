@@ -8,23 +8,33 @@ export default function Home() {
 	const products = [
 		{
 			id: 1,
-			name: 'Producto 1',
-			thumbnail: '/product1.jpg',
+			name: 'Tomacorriente doble gfci 125 V 15 A negro eagle línea plata',
+			thumbnail: 'https://sv.epaenlinea.com/media/catalog/product/cache/e28d833c75ef32af78ed2f15967ef6e0/9/4/94af70e3-352d-4a2b-9abb-b82761c0bd11.jpg',
 		},
 		{
 			id: 2,
-			name: 'Producto 2',
-			thumbnail: '/product2.jpg',
+			name: 'Cable TSJ 3 x 2 mm (12 AWG) Viakon 600 V',
+			thumbnail: 'https://sv.epaenlinea.com/media/catalog/product/cache/e28d833c75ef32af78ed2f15967ef6e0/1/a/1ab0e140-cc3a-4b19-9e93-7d8681fe93fa.jpg',
 		},
 		{
 			id: 3,
-			name: 'Producto 3',
-			thumbnail: '/product3.jpg',
+			name: 'Breaker 2 polos 50 A THQL 2150 GE',
+			thumbnail: 'https://sv.epaenlinea.com/media/catalog/product/cache/98c6f527796018ffa7e6361fde2fdd6f/3/1/312a5c21-8fcc-41ed-aebc-082d8b436d62.jpg',
 		},
 		{
 			id: 4,
-			name: 'Producto 4',
-			thumbnail: '/product4.jpg',
+			name: 'Protector contra sobretensión blanco 6 espacios 800 J cable 3 m',
+			thumbnail: 'https://sv.epaenlinea.com/media/catalog/product/cache/e28d833c75ef32af78ed2f15967ef6e0/c/d/cd942426-174e-4936-a600-e403263d3b84.jpg',
+		},
+		{
+			id: 5,
+			name: 'Lámpara colgante moderna negro 3 luces e27 21268',
+			thumbnail: 'https://sv.epaenlinea.com/media/catalog/product/cache/e28d833c75ef32af78ed2f15967ef6e0/9/c/9ccefc86-cd42-43c1-bd73-bf8ba834e561.jpg',
+		},
+		{
+			id: 6,
+			name: 'Protector contra sobretensión blanco 6 espacios 800 J cable 3 m',
+			thumbnail: 'https://sv.epaenlinea.com/media/catalog/product/cache/e28d833c75ef32af78ed2f15967ef6e0/c/d/cd942426-174e-4936-a600-e403263d3b84.jpg',
 		},
 	];
 
@@ -51,18 +61,27 @@ export default function Home() {
 						width: 'full',
 						maxWidth: '1200px',
 						marginInline: 'auto',
-						gap: 8,
+						gap: '3rem',
 					})}
 				>
 					<ProductShowcase
+						className={css({
+							gridColumn: { base: 'span 4', sm: 'span 12' },
+						})}
 						products={[...products]}
 						title={'Mas Vendidos'}
 					/>
 					<ProductShowcase
+						className={css({
+							gridColumn: { base: 'span 4', sm: 'span 12' },
+						})}
 						products={[...products]}
 						title={'Tedencias'}
 					/>
 					<ProductShowcase
+						className={css({
+							gridColumn: { base: 'span 4', sm: 'span 12' },
+						})}
 						products={[...products]}
 						title={'Recien Llegados'}
 					/>

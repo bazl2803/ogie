@@ -17,7 +17,7 @@ const CategoryCardStyles = sva({
 			gap: 2,
 			cursor: 'pointer',
 			height: 'fit-content',
-			width: '80px',
+			width: { base: '5.5rem', md: '6rem' },
 			overflow: 'hidden',
 		},
 		label: {
@@ -32,6 +32,7 @@ const CategoryCardStyles = sva({
 			objectFit: 'cover',
 			borderRadius: 'xl',
 			aspectRatio: '1/1',
+			width: { base: '5.5rem', md: '6rem' },
 		},
 	},
 });
@@ -48,8 +49,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({
 				className={classes.image}
 				src={imageUrl!}
 				alt={label}
-				sizes="64px"
-				style={{ width: '80px', height: '80px' }}
+				sizes="128px"
 				width={64}
 				height={64}
 			/>

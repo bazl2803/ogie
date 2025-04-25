@@ -16,7 +16,17 @@ export const CategoryList = () => {
 	];
 
 	return (
-		<div className={clsx('categoriesList', stack({ marginLeft: '16px' }))}>
+		<div
+			className={clsx(
+				'categoriesList',
+				stack({
+					marginInline: 'auto',
+					maxWidth: '1200px',
+					width: 'full',
+					paddingInline: '1rem',
+				})
+			)}
+		>
 			<div
 				className={stack({
 					direction: 'row',
