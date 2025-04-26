@@ -21,13 +21,5 @@ export async function POST(req: Request) {
 		},
 	});
 
-	return (
-		new Response(JSON.stringify(category)),
-		{
-			status: 201,
-			headers: {
-				'Content-Type': 'application/json',
-			},
-		}
-	);
+	return new Response(JSON.stringify(category));
 }
