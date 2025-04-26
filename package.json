@@ -13,7 +13,7 @@
     "@auth/neon-adapter": "^1.8.0",
     "@emotion/react": "^11.14.0",
     "@neondatabase/serverless": "^1.0.0",
-    "@prisma/client": "^6.2.1",
+    "@prisma/client": "^6.6.0",
     "@tabler/icons-react": "^3.24.0",
     "clsx": "^2.1.1",
     "esbuild": "^0.25.2",
@@ -29,7 +29,7 @@
     "@types/react-dom": "^19",
     "eslint": "^8",
     "eslint-config-next": "^15.2.4",
-    "prisma": "^6.2.1",
+    "prisma": "^6.6.0",
     "typescript": "^5"
   }
 }
