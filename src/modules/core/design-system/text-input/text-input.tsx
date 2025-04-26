@@ -18,7 +18,7 @@ const TextInputStyles = sva({
 			backgroundColor: 'gray.50',
 			paddingInline: '12px',
 			outline: 'none',
-			borderRadius: 'xl',
+			borderRadius: 'lg',
 			gap: '8px',
 			color: 'neutral.400',
 			transition: 'color 0.2s ease-in-out',

@@ -5,14 +5,15 @@ import clsx from 'clsx';
 
 export const CategoryList = () => {
 	const categories = [
-		{ title: 'Iluminación', image: '/spotlight.webp' },
-		{ title: 'Tomacorrientes', image: '/outlet.jpeg' },
-		{ title: 'Interruptores', image: '/switch.jpeg' },
+		{ title: 'Focos', image: '/spotlight.webp' },
+		{ title: 'Tomas', image: '/outlet.jpeg' },
+		{ title: 'Switchs', image: '/switch.jpeg' },
 		{ title: 'Dados', image: '/pole.webp' },
-		{ title: 'Receptáculos', image: '/socket.jpeg' },
+		{ title: 'Sockets', image: '/socket.jpeg' },
 		{ title: 'Cables', image: '/wires.jpeg' },
 		{ title: 'Canaletas', image: '/conduit.webp' },
 		{ title: 'Herramientas', image: '/tools.webp' },
+		{ title: 'Transformadores', image: '/transformator.png' },
 	];
 
 	return (

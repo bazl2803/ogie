@@ -13,8 +13,7 @@ const ProductShowcaseItemStyles = sva({
 	base: {
 		root: { display: 'grid', gridTemplateRows: 'subgrid', gridRow: 'span 2' },
 		image: {
-			width: 'auto',
-			padding: '1rem',
+			//padding: '1rem',
 			mixBlendMode: 'multiply',
 		},
 		'image-container': {
@@ -23,9 +22,10 @@ const ProductShowcaseItemStyles = sva({
 			display: 'flex',
 			justifyContent: 'center',
 			alignItems: 'center',
-			marginBottom: '8px',
 			backgroundColor: 'neutral.50',
 			borderRadius: 'xl',
+			aspectRatio: '1/1',
+			overflow: 'hidden',
 		},
 		label: {
 			fontSize: 'sm',

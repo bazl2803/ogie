@@ -12,6 +12,13 @@ import { SearchBox } from '../search-box/search-box';
 const NavigationBarStyles = sva({
 	slots: ['root', 'logo', 'search', 'actions'],
 	base: {
+		root: {
+			backgroundColor: 'white',
+			position: 'sticky',
+			top: 0,
+			zIndex: 100,
+			height: '4rem'
+		},
 		logo: {
 			width: 'auto',
 		},

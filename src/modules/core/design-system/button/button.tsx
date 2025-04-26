@@ -17,7 +17,7 @@ const buttonStyles = cva({
 		justifyContent: 'center',
 		alignItems: 'center',
 		flexDirection: 'row',
-		fontWeight: '600',
+		fontWeight: '500',
 		columnGap: '8px',
 	},
 	variants: {
@@ -44,6 +44,7 @@ const buttonStyles = cva({
 				color: 'neutral.950',
 				bg: 'transparent',
 				border: 'none',
+				padding: '0 !important',
 			},
 		},
 		shape: {

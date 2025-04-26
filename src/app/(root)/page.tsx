@@ -33,8 +33,8 @@ export default function Home() {
 		},
 		{
 			id: 6,
-			name: 'Protector contra sobretensión blanco 6 espacios 800 J cable 3 m',
-			thumbnail: 'https://sv.epaenlinea.com/media/catalog/product/cache/e28d833c75ef32af78ed2f15967ef6e0/c/d/cd942426-174e-4936-a600-e403263d3b84.jpg',
+			name: 'Bombillo LED 15 W e27 A60 luz blanca Sylvania',
+			thumbnail: 'https://sv.epaenlinea.com/media/catalog/product/cache/e28d833c75ef32af78ed2f15967ef6e0/3/f/3f78f4c8-0f1a-42e5-bd4f-9f1cfabf7699.jpg',
 		},
 	];
 

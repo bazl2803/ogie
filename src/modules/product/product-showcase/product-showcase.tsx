@@ -19,12 +19,12 @@ const ProductShowcaseStyles = sva({
 		root: {
 			display: 'flex',
 			flexDirection: 'column',
-			rowGap: '1rem',
+			rowGap: '0.25rem',
 		},
 		products: {
 			display: 'grid',
 			gridTemplateColumns: { base: 'repeat(2, 1fr)', lg: 'repeat(6, 1fr)' },
-			gridTemplateRows: '200px auto',
+			gridTemplateRows: 'auto',
 			alignItems: 'start',
 			gap: '0.25rem 1rem',
 		},
@@ -48,6 +48,7 @@ export const ProductShowcase = (props: ProductShowcaseProps) => {
 					direction: 'row',
 					wrap: 'nowrap',
 					justify: 'space-between',
+					align: 'center',
 				})}
 			>
 				<Title level={6}>{title}</Title>
