@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import { css, sva } from '@styled-system/css';
-import clsx from 'clsx';
+import { sva } from '@styled-system/css';
 
 // TODO: Use the Product type from the database
 interface ProductShowcaseItemProps {
