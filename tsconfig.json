@@ -17,6 +17,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": "./",
     "plugins": [
       {
         "name": "next"
@@ -28,6 +29,9 @@
       ],
       "@features/*": [
         "./src/features/*"
+      ],
+      "@components": [
+        "./src/modules/core/design-system/index.ts"
       ],
       "@styled-system/*": [
         "./styled-system/*"

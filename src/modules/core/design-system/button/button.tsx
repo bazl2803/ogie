@@ -1,15 +1,35 @@
+/* ----------------------------------------------------------------
+ *	Dependencies
+-----------------------------------------------------------------*/
+
+'use client';
 import { HTMLAttributes } from 'react';
 import { cva } from '@styled-system/css';
 import clsx from 'clsx';
 
-interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+/* ----------------------------------------------------------------
+ *	Props
+-----------------------------------------------------------------*/
+
+interface ButtonProps
+	extends HTMLAttributes<HTMLButtonElement> {
 	ref?: React.Ref<HTMLButtonElement>;
-	variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'text';
+	variant?:
+		| 'primary'
+		| 'secondary'
+		| 'outline'
+		| 'ghost'
+		| 'text';
 	shape?: 'pill' | 'rounded' | 'square';
 	size?: 'sm' | 'md' | 'lg';
+	fullWidth?: boolean;
 	icon?: React.ReactNode;
 	children?: string;
 }
+
+/* ----------------------------------------------------------------
+ *	Styles
+-----------------------------------------------------------------*/
 
 const buttonStyles = cva({
 	base: {
@@ -56,7 +76,7 @@ const buttonStyles = cva({
 			sm: {
 				h: '2rem',
 				minW: '2rem',
-				fontSize: '14px',
+				fontSize: '1rem',
 				'&:has(span)': { p: '12px' },
 				'& svg': { w: '1rem', h: '1rem' },
 			},
@@ -65,7 +85,7 @@ const buttonStyles = cva({
 				minW: '2.5rem',
 				fontSize: '16px',
 				'&:has(span)': { p: '14px' },
-				'& svg': { w: '1.25rem', h: '1rem' },
+				'& svg': { w: '1.25rem', h: '1.25rem' },
 			},
 			lg: {
 				h: '3rem',
@@ -75,6 +95,11 @@ const buttonStyles = cva({
 				'& svg': { w: '1.5rem', h: '1.5rem' },
 			},
 		},
+		fullWidth: {
+			true: {
+				w: 'full',
+			},
+		},
 	},
 	defaultVariants: {
 		variant: 'primary',
@@ -82,6 +107,9 @@ const buttonStyles = cva({
 	},
 });
 
+/* ----------------------------------------------------------------
+ *	Component
+-----------------------------------------------------------------*/
 export const Button: React.FC<ButtonProps> = ({
 	icon,
 	children,
@@ -89,6 +117,7 @@ export const Button: React.FC<ButtonProps> = ({
 	variant,
 	shape,
 	size,
+	fullWidth,
 	...rest
 }) => {
 	const classes = clsx(
@@ -96,6 +125,7 @@ export const Button: React.FC<ButtonProps> = ({
 			variant,
 			shape,
 			size,
+			fullWidth,
 		}),
 		className
 	);

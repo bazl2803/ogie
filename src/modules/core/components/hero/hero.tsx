@@ -3,9 +3,9 @@ import { css } from '@styled-system/css';
 
 // Styles
 const HeroStyles = css({
-	paddingInline: '4',
+	paddingInline: { base: '2rem', md: '6rem' },
 	textWrap: 'pretty',
-	textAlign: 'center',
+	textAlign: { base: 'center', md: 'left' },
 });
 
 export const Hero = () => {
@@ -14,7 +14,7 @@ export const Hero = () => {
 			className={HeroStyles}
 			size="4xl"
 		>
-			Soluciones Eléctricas para su Hogar o Proyecto.
+			Soluciones Eléctricas <br/>para su Hogar <br/>o Proyecto.
 		</Display>
 	);
 };

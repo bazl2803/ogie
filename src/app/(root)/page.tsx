@@ -1,8 +1,8 @@
 import { stack } from '@styled-system/patterns';
 import { CategoryList } from '@/modules/category/category-list';
 import { Hero } from '@/modules/core/components/hero/hero';
-import { ProductShowcase } from '@/modules/product/product-showcase/product-showcase';
 import { css } from '@styled-system/css';
+import { ProductShowcase } from '@/modules/product/components/product-showcase';
 
 export default function Home() {
 	const products = [
