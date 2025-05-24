@@ -1,7 +1,7 @@
 import { flex } from '@styled-system/patterns';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
-import { Inter, Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import React from 'react';
 import '../globals.css';
 import { css } from '@styled-system/css';
@@ -12,16 +12,19 @@ export const metadata: Metadata = {
 	description: 'Everything what you want',
 };
 
-const poppins = Poppins({
-	subsets: ['latin'],
-	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-	display: 'swap',
-	variable: '--font-poppins',
-});
-
 const inter = Inter({
 	subsets: ['latin'],
-	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+	weight: [
+		'100',
+		'200',
+		'300',
+		'400',
+		'500',
+		'600',
+		'700',
+		'800',
+		'900',
+	],
 	display: 'swap',
 	variable: '--font-inter',
 });
@@ -30,7 +33,9 @@ interface Props {
 	children: React.ReactNode;
 }
 
-export default function RootLayout({ children }: Readonly<Props>) {
+export default function RootLayout({
+	children,
+}: Readonly<Props>) {
 	const classes = clsx(
 		flex({
 			direction: 'column',
@@ -38,14 +43,15 @@ export default function RootLayout({ children }: Readonly<Props>) {
 			rowGap: '2rem',
 			backgroundColor: 'white',
 		}),
-		inter.className,
-		poppins.className
+		inter.className
 	);
 
 	return (
 		<html
 			lang="es"
-			className={css({ fontSize: { base: '14px', sm: '16px' } })}
+			className={css({
+				fontSize: { base: '14px', sm: '16px' },
+			})}
 		>
 			<body className={classes}>
 				<NavigationBar />
