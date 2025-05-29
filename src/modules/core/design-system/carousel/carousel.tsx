@@ -13,6 +13,7 @@ const CarouselStyles = sva({
 		container: {
 			display: 'flex',
 			flexDirection: 'row',
+			justifyContent: 'space-between',
 			overflowX: 'auto',
 			gap: { base: 3, md: 4 },
 			scrollSnapType: 'x mandatory',

@@ -8,55 +8,51 @@ import { css } from '@styled-system/css';
 import { NavigationBar } from '@/modules/core/components/navigation-bar/navigation-bar';
 
 export const metadata: Metadata = {
-	title: 'Ogie',
-	description: 'Everything what you want',
+    title:
+        'Suministros Eléctricos - Todo lo que necesitas para tu hogar y proyecto',
+    description:
+        'Suministros Eléctricos ofrece una amplia gama de productos eléctricos para satisfacer todas tus necesidades, desde cables y enchufes hasta iluminación y herramientas especializadas. Encuentra todo lo que necesitas para tu hogar o proyecto en un solo lugar. ¡Calidad y servicio garantizados!',
 };
 
 const inter = Inter({
-	subsets: ['latin'],
-	weight: [
-		'100',
-		'200',
-		'300',
-		'400',
-		'500',
-		'600',
-		'700',
-		'800',
-		'900',
-	],
-	display: 'swap',
-	variable: '--font-inter',
+    subsets: ['latin'],
+    weight: [
+        '100',
+        '200',
+        '300',
+        '400',
+        '500',
+        '600',
+        '700',
+        '800',
+        '900',
+    ],
+    display: 'swap',
+    variable: '--font-inter',
 });
 
 interface Props {
-	children: React.ReactNode;
+    children: React.ReactNode;
 }
 
 export default function RootLayout({
-	children,
-}: Readonly<Props>) {
-	const classes = clsx(
-		flex({
-			direction: 'column',
-			alignItems: 'stretch',
-			rowGap: '2rem',
-			backgroundColor: 'white',
-		}),
-		inter.className
-	);
+                                       children,
+                                   }: Readonly<Props>) {
+    const classes = clsx(
+        inter.className
+    );
 
-	return (
-		<html
-			lang="es"
-			className={css({
-				fontSize: { base: '14px', sm: '16px' },
-			})}
-		>
-			<body className={classes}>
-				<NavigationBar />
-				{children}
-			</body>
-		</html>
-	);
+    return (
+        <html
+            lang="es"
+            className={css({
+                fontSize: { base: '14px', sm: '16px' },
+            })}
+        >
+        <body className={classes}>
+        <NavigationBar/>
+        {children}
+        </body>
+        </html>
+    );
 }

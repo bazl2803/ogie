@@ -13,8 +13,6 @@ const AppbarStyles = css({
 	justifyContent: 'space-between',
 	alignItems: 'center',
 	width: '100%',
-	paddingBlock: '2',
-	paddingInline: '4',
 	gap: '2',
 });
 
