@@ -1,4 +1,3 @@
-import { flex } from '@styled-system/patterns';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
