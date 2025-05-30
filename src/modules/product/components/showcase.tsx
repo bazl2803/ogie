@@ -1,18 +1,23 @@
+'use client';
 import { Button, Card, Title } from '@/modules/core/design-system';
 import { sva } from '@styled-system/css';
-import { ProductShowcaseItem } from './product-showcase-item';
+import { ProductShowcaseItem } from './showcase-product-card';
 import clsx from 'clsx';
 import { flex } from '@styled-system/patterns';
+import { Product } from "@prisma/client";
 
 /**
  * Props
  */
-interface ProductShowcaseProps extends React.HTMLAttributes<HTMLDivElement> {
+interface ProductsShowcaseProps extends React.HTMLAttributes<HTMLDivElement> {
 	title: string;
-	products: { id: string | number; name: string; thumbnail: string }[];
+	products: Product[];
 }
 
-const ProductShowcaseStyles = sva({
+/**
+ * Styles
+ */
+const ProductsShowcaseStyles = sva({
 	className: 'ProductShowcase',
 	slots: ['root', 'products'],
 	base: {
@@ -23,10 +28,9 @@ const ProductShowcaseStyles = sva({
 		},
 		products: {
 			display: 'grid',
-			gridTemplateColumns: { base: 'repeat(2, 1fr)', lg: 'repeat(6, 1fr)' },
-			gridTemplateRows: 'auto',
+			gridTemplateColumns: 'repeat(auto-fill, minmax(12rem, 1fr))',
 			alignItems: 'start',
-			gap: '0.25rem 1rem',
+			gap: '0.25rem 2rem',
 		},
 	},
 });
@@ -37,9 +41,9 @@ const ProductShowcaseStyles = sva({
  * @constructor
  */
 
-export const ProductShowcase = (props: ProductShowcaseProps) => {
+export const ProductsShowcase = (props: ProductsShowcaseProps) => {
 	const { className, title, products } = props;
-	const classes = ProductShowcaseStyles();
+	const classes = ProductsShowcaseStyles();
 
 	return (
 		<Card className={clsx(classes.root, className)}>

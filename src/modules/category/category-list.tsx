@@ -22,9 +22,9 @@ export const CategoryList = () => {
 				'categoriesList',
 				stack({
 					marginInline: 'auto',
-					maxWidth: '1200px',
+					maxWidth: '6xl',
 					width: 'full',
-					paddingInline: '1rem',
+					padding: '1rem',
 				})
 			)}
 		>

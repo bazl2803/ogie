@@ -1,3 +1,7 @@
+/*-----------------------------------------------------------------------------
+ * Dependencies
+-------------------------------------------------------------------------------*/
+
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -6,52 +10,53 @@ import '../globals.css';
 import { css } from '@styled-system/css';
 import { NavigationBar } from '@/modules/core/components/navigation-bar/navigation-bar';
 
+/**----------------------------------------------------------------------------
+ * Metadata
+ -----------------------------------------------------------------------------*/
+
 export const metadata: Metadata = {
-    title:
-        'Suministros Eléctricos - Todo lo que necesitas para tu hogar y proyecto',
-    description:
-        'Suministros Eléctricos ofrece una amplia gama de productos eléctricos para satisfacer todas tus necesidades, desde cables y enchufes hasta iluminación y herramientas especializadas. Encuentra todo lo que necesitas para tu hogar o proyecto en un solo lugar. ¡Calidad y servicio garantizados!',
+	title: 'Suministros Eléctricos - Todo lo que necesitas para tu hogar y proyecto',
+	description:
+		'Suministros Eléctricos ofrece una amplia gama de productos eléctricos para satisfacer todas tus necesidades, desde cables y enchufes hasta iluminación y herramientas especializadas. Encuentra todo lo que necesitas para tu hogar o proyecto en un solo lugar. ¡Calidad y servicio garantizados!',
 };
 
+/**----------------------------------------------------------------------------
+ * Inter Font
+ -----------------------------------------------------------------------------*/
+
 const inter = Inter({
-    subsets: ['latin'],
-    weight: [
-        '100',
-        '200',
-        '300',
-        '400',
-        '500',
-        '600',
-        '700',
-        '800',
-        '900',
-    ],
-    display: 'swap',
-    variable: '--font-inter',
+	subsets: ['latin'],
+	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+	display: 'swap',
+	variable: '--font-inter',
 });
 
+/**----------------------------------------------------------------------------
+ * Props Interface
+ -----------------------------------------------------------------------------*/
+
 interface Props {
-    children: React.ReactNode;
+	children: React.ReactNode;
 }
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<Props>) {
-    const classes = clsx(
-        inter.className
-    );
+/**----------------------------------------------------------------------------
+ * Root Layout
+ -----------------------------------------------------------------------------*/
 
-    return (
-        <html
-            lang="es"
-            className={css({
-                fontSize: { base: '14px', sm: '16px' },
-            })}
-        >
-        <body className={classes}>
-        <NavigationBar/>
-        {children}
-        </body>
-        </html>
-    );
+export default function RootLayout({ children }: Readonly<Props>) {
+	const classes = clsx(inter.className);
+
+	return (
+		<html
+			lang="es"
+			className={css({
+				fontSize: { base: '14px', sm: '16px' },
+			})}
+		>
+			<body className={classes}>
+				<NavigationBar />
+				{children}
+			</body>
+		</html>
+	);
 }

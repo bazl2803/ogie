@@ -18,10 +18,6 @@ const CarouselStyles = sva({
 			gap: { base: 3, md: 4 },
 			scrollSnapType: 'x mandatory',
 			scrollbarWidth: 'none',
-			_after: {
-				content: '""',
-				paddingEnd: '0.5rem',
-			}
 		},
 	},
 });
