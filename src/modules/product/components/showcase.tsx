@@ -1,5 +1,5 @@
 'use client';
-import { Button, Card, Title } from '@/modules/core/design-system';
+import { Button, Card, Title } from '@/core/design-system';
 import { sva } from '@styled-system/css';
 import { ProductShowcaseItem } from './showcase-product-card';
 import clsx from 'clsx';
@@ -30,7 +30,7 @@ const ProductsShowcaseStyles = sva({
 			display: 'grid',
 			gridTemplateColumns: 'repeat(auto-fill, minmax(12rem, 1fr))',
 			alignItems: 'start',
-			gap: '0.25rem 2rem',
+			gap: '2rem',
 		},
 	},
 });

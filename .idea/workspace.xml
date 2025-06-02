@@ -5,15 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="Fixing error on layout.tsx">
+      <change afterPath="$PROJECT_DIR$/src/core/components/footer/footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(root)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/category/category-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/category/category-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/components/hero/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/components/hero/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/components/navigation-bar/navigation-bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/components/navigation-bar/navigation-bar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/button/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/design-system/button/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/core/design-system/carousel/carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/product/components/product-showcase-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/components/product-showcase-item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/product/components/product-showcase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/components/product-showcase.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/components/hero/hero.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/components/navigation-bar/navigation-bar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/components/search-box/search-box.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/appbar/appbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/appbar/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/avatar/avatar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/avatar/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/button/button.styles.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/button/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/button/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/card/card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/card/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/carousel/carousel-item.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/carousel/carousel.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/carousel/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/container/container.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/container/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/dialog/dialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/display/display.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/display/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/drawer/drawer-context.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/drawer/drawer-sheet.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/drawer/drawer-trigger.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/drawer/drawer.styles.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/drawer/drawer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/drawer/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/listbox/listbox-item.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/listbox/listbox.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/table/table.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/text-input/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/text-input/text-input.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/title/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/title/title.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/lib/prisma-client.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/core/lib/prisma.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/product/actions/getProducts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/actions/getProducts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/product/components/products-list-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/components/products-list-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/product/components/products-page/products-page-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/components/products-page/products-page-header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/product/components/products-page/products-page-products-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/components/products-page/products-page-products-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/product/components/products_table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/components/products_table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/product/components/showcase-product-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/components/showcase-product-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/product/components/showcase.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/components/showcase.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +199,8 @@
       <workItem from="1746066584693" duration="4378000" />
       <workItem from="1748493582382" duration="4440000" />
       <workItem from="1748569829936" duration="8451000" />
+      <workItem from="1748827624316" duration="1333000" />
+      <workItem from="1748844017967" duration="464000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring stuff">
       <option name="closed" value="true" />

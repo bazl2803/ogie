@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { sva } from '@styled-system/css';
 import { Product } from '@prisma/client';
-import { Button } from '@components';
+import { Button } from '@/core/design-system';
 import { IconShoppingCartPlus } from '@tabler/icons-react';
 import { stack } from '@styled-system/patterns';
 
@@ -13,7 +13,7 @@ const ProductsShowcaseItemStyles = sva({
 	className: 'ProductShowcaseItem',
 	slots: ['root', 'image', 'thumbnail', 'name', 'price'],
 	base: {
-		root: { display: 'grid', gridTemplateRows: 'subgrid', gridRow: 'span 6' },
+		root: { display: 'grid', gridTemplateRows: 'subgrid', gridRow: 'span 4', rowGap: '0.25rem' },
 		image: {
 			mixBlendMode: 'multiply',
 		},
@@ -33,7 +33,7 @@ const ProductsShowcaseItemStyles = sva({
 			},
 		},
 		name: {
-			fontSize: 'sm',
+			fontSize: 'medium',
 			fontWeight: 700,
 			WebkitLineClamp: 2,
 			display: '-webkit-box',
@@ -73,6 +73,8 @@ export const ProductShowcaseItem = (props: ProductsShowcaseItemProps) => {
 			>
 				{product.name}
 			</span>
+
+			{/* Price */}
 			<div className={stack({ direction: 'row', gap: 1 })}>
 				<span className={classes.price}>{`$${product.price.toFixed(2)}`}</span>
 				{product.oldPrice && (

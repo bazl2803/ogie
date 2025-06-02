@@ -1,4 +1,4 @@
-import { Carousel, CarouselItem, Title } from '@/modules/core/design-system';
+import { Carousel, CarouselItem, Title } from '@/core/design-system';
 import { stack } from '@styled-system/patterns';
 import { CategoryCard } from './category-card';
 import clsx from 'clsx';

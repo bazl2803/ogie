@@ -2,8 +2,8 @@ import { Product } from '@prisma/client';
 import { sva } from '@styled-system/css';
 import React from 'react';
 import Image from 'next/image';
-import { Card } from '@/modules/core/design-system';
-import { ListboxItem } from '@/modules/core/design-system/listbox/listbox-item';
+import { Card } from '@/core/design-system';
+import { ListboxItem } from '@/core/design-system/listbox/listbox-item';
 
 interface ProductsListItemProps {
 	product: Partial<Product>;

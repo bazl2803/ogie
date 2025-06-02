@@ -1,6 +1,6 @@
 'use server';
 import React from 'react';
-import { prisma } from '@/modules/core/lib/prisma';
+import { prisma } from '@/core/lib/prisma';
 import ProductsList from '../products-list';
 import { css } from '@styled-system/css';
 

@@ -1,6 +1,6 @@
 import { stack } from '@styled-system/patterns';
 import { CategoryList } from '@/modules/category/category-list';
-import { Hero } from '@/modules/core/components/hero/hero';
+import { Hero } from '@/core/components/hero/hero';
 import { css } from '@styled-system/css';
 import { ProductsShowcase } from '@/modules/product/components/showcase';
 import { Product } from '@prisma/client';
@@ -50,7 +50,7 @@ export default function Home() {
 			id: 5,
 			name: 'Lámpara colgante moderna negro 3 luces e27 21268',
 			thumbnail:
-				'https://sv.epaenlinea.com/media/catalog/product/cache/e28d833c75ef32af78ed2f15967ef6e0/9/c/9ccefc86-cd42-43c1-bd73-bf8ba834e561.jpg',
+				'https://sv.epaenlinea.com/media/catalog/psroduct/cache/e28d833c75ef32af78ed2f15967ef6e0/9/c/9ccefc86-cd42-43c1-bd73-bf8ba834e561.jpg',
 			price: 82.24,
 			stock: 0,
 			status: '',

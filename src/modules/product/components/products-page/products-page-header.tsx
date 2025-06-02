@@ -1,4 +1,4 @@
-import { Display, Button } from '@/modules/core/design-system';
+import { Display, Button } from '@/core/design-system';
 import { css } from '@styled-system/css';
 import { grid } from '@styled-system/patterns';
 import {
