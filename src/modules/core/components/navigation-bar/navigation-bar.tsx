@@ -37,6 +37,7 @@ const NavigationBarStyles = sva({
 			display: 'flex',
 			direction: 'row',
 			gap: '1rem',
+			color:'white'
 		},
 	},
 });

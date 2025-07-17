@@ -11,7 +11,7 @@ export const HeaderStyles = sva({
 		},
 		hero: {
 			color: 'white',
-			fontSize: { base: '3xl', md: '4xl', lg: '6xl' },
+			fontSize: { base: '2xl', md: '4xl', lg: '6xl' },
 			fontWeight: 'bold',
 			width: 'full',
 		},
@@ -21,8 +21,9 @@ export const HeaderStyles = sva({
 			backgroundSize: 'cover',
 			backgroundPosition: 'top',
 			backgroundRepeat: 'no-repeat no-repeat',
+			maskImage:'linear-gradient(black, transparent)',
 			textAlign: 'center',
-			height: '70vh',
+			height: '50vh',
 		},
 	},
 });
