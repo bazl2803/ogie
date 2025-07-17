@@ -31,7 +31,7 @@
         "./src/features/*"
       ],
       "@components": [
-        "src/core/index.ts"
+        "./src/modules/core/design-system/index.ts"
       ],
       "@styled-system/*": [
         "./styled-system/*"

@@ -1,0 +1,1 @@
+export { auth as middleware } from '@/modules/core/lib/auth'

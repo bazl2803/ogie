@@ -1,5 +1,5 @@
 'use client';
-import { Button, Card, Title } from '@/core/design-system';
+import { Button, Card, Title } from '@/modules/core/design-system';
 import { sva } from '@styled-system/css';
 import { ProductShowcaseItem } from './showcase-product-card';
 import clsx from 'clsx';
@@ -24,7 +24,7 @@ const ProductsShowcaseStyles = sva({
 		root: {
 			display: 'flex',
 			flexDirection: 'column',
-			rowGap: '0.25rem',
+			rowGap: '0.5rem',
 		},
 		products: {
 			display: 'grid',
@@ -55,7 +55,7 @@ export const ProductsShowcase = (props: ProductsShowcaseProps) => {
 					align: 'center',
 				})}
 			>
-				<Title level={6}>{title}</Title>
+				<Title level={5}>{title}</Title>
 				<Button variant="text">Ver más</Button>
 			</div>
 

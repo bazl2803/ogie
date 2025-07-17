@@ -4,49 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="Fixing error on layout.tsx">
-      <change afterPath="$PROJECT_DIR$/src/core/components/footer/footer.tsx" afterDir="false" />
+    <list default="true" id="50f6e694-04a8-4bbc-93e6-924a6e146fba" name="Changes" comment="Fixing errors">
+      <change afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/core/design-system/input/input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/core/lib/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/migrations/migration_lock.toml" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/migrations/migration_lock.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Gemini_Generated_Image_z9lgkyz9lgkyz9lg.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sumi-alt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sumi.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(root)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(root)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/manage/products/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/manage/products/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/components/footer/footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/auth/lib/auth.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/category/category-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/category/category-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/components/hero/hero.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/components/navigation-bar/navigation-bar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/components/search-box/search-box.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/appbar/appbar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/appbar/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/avatar/avatar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/avatar/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/button/button.styles.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/button/button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/button/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/card/card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/card/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/carousel/carousel-item.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/carousel/carousel.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/carousel/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/container/container.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/container/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/dialog/dialog.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/display/display.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/display/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/drawer/drawer-context.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/drawer/drawer-sheet.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/drawer/drawer-trigger.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/drawer/drawer.styles.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/drawer/drawer.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/drawer/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/listbox/listbox-item.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/listbox/listbox.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/table/table.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/text-input/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/text-input/text-input.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/title/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/design-system/title/title.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/lib/prisma-client.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/core/lib/prisma.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/product/actions/getProducts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/actions/getProducts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/product/components/products-collection.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/product/components/products-list-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/components/products-list-item.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/product/components/products-page/products-page-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/components/products-page/products-page-header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/product/components/products-page/products-page-products-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/product/components/products-page/products-page-products-list.tsx" afterDir="false" />
@@ -63,8 +42,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -107,6 +86,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -127,6 +107,12 @@
         <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bryan\OneDrive\Documents\Projects\ogie\src\app" />
+      <recent name="C:\Users\bryan\OneDrive\Documents\Projects\ogie\public" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.dev">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
@@ -200,7 +186,12 @@
       <workItem from="1748493582382" duration="4440000" />
       <workItem from="1748569829936" duration="8451000" />
       <workItem from="1748827624316" duration="1333000" />
-      <workItem from="1748844017967" duration="464000" />
+      <workItem from="1748844017967" duration="662000" />
+      <workItem from="1749613144880" duration="7548000" />
+      <workItem from="1750291716324" duration="11100000" />
+      <workItem from="1750377922007" duration="8157000" />
+      <workItem from="1750534558126" duration="20374000" />
+      <workItem from="1752539549049" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring stuff">
       <option name="closed" value="true" />
@@ -226,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748570621066</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixing errors">
+      <option name="closed" value="true" />
+      <created>1748844701874</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748844701874</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +257,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactoring stuff" />
     <MESSAGE value="Fixing error on layout.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing error on layout.tsx" />
+    <MESSAGE value="Fixing errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing errors" />
   </component>
 </project>

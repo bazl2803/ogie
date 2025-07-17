@@ -1,4 +1,4 @@
-import { Carousel, CarouselItem, Title } from '@/core/design-system';
+import { Carousel, CarouselItem, Title } from '@/modules/core/design-system';
 import { stack } from '@styled-system/patterns';
 import { CategoryCard } from './category-card';
 import clsx from 'clsx';
@@ -25,6 +25,7 @@ export const CategoryList = () => {
 					maxWidth: '6xl',
 					width: 'full',
 					padding: '1rem',
+					gap: '1rem',
 				})
 			)}
 		>
@@ -35,7 +36,7 @@ export const CategoryList = () => {
 					justifyContent: 'space-between',
 				})}
 			>
-				<Title level={6}>Categorias</Title>
+				<Title level={5}>Categorias</Title>
 			</div>
 
 			<Carousel>

@@ -1,1 +1,1 @@
-export { auth as middleware } from '@/modules/auth/lib/auth';
+export { auth as middleware } from '@/modules/core/lib/auth';

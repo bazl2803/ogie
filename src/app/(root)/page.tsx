@@ -1,9 +1,9 @@
-import { stack } from '@styled-system/patterns';
 import { CategoryList } from '@/modules/category/category-list';
-import { Hero } from '@/core/components/hero/hero';
 import { css } from '@styled-system/css';
 import { ProductsShowcase } from '@/modules/product/components/showcase';
 import { Product } from '@prisma/client';
+import { MainHeader } from '@/modules/core/components/header/header';
+import { stack } from '@styled-system/patterns';
 
 export default function Home() {
 	const products: Product[] = [
@@ -49,8 +49,7 @@ export default function Home() {
 		{
 			id: 5,
 			name: 'Lámpara colgante moderna negro 3 luces e27 21268',
-			thumbnail:
-				'https://sv.epaenlinea.com/media/catalog/psroduct/cache/e28d833c75ef32af78ed2f15967ef6e0/9/c/9ccefc86-cd42-43c1-bd73-bf8ba834e561.jpg',
+			thumbnail: '/product5.jpg',
 			price: 82.24,
 			stock: 0,
 			status: '',
@@ -75,59 +74,53 @@ export default function Home() {
 	];
 
 	return (
-		<>
-			<Hero />
+		<div className={stack()}>
+			<MainHeader />
+			<CategoryList />
+
 			<div
-				className={stack({
-					width: '100%',
-					rowGap: 8,
+				className={css({
+					display: 'grid',
+					paddingInline: '1rem',
+					gridTemplateColumns: {
+						base: 'repeat(4, 1fr)',
+						md: 'repeat(8, 1fr)',
+						lg: 'repeat(12, 1fr)',
+					},
+					width: 'full',
+					maxWidth: '6xl',
+					marginInline: 'auto',
+					marginBottom: 12,
+					gap: '3rem',
 				})}
 			>
-				<CategoryList />
-
-				<div
+				{/*Most selled products showcase*/}
+				<ProductsShowcase
 					className={css({
-						display: 'grid',
-						paddingInline: '1rem',
-						gridTemplateColumns: {
-							base: 'repeat(4, 1fr)',
-							md: 'repeat(8, 1fr)',
-							lg: 'repeat(12, 1fr)',
-						},
-						width: 'full',
-						maxWidth: '6xl',
-						marginInline: 'auto',
-						gap: '3rem',
+						gridColumn: { base: 'span 4', sm: 'span 12' },
 					})}
-				>
-					{/*Most selled products showcase*/}
-					<ProductsShowcase
-						className={css({
-							gridColumn: { base: 'span 4', sm: 'span 12' },
-						})}
-						products={[...products]}
-						title={'Más Vendidos'}
-					/>
+					products={[...products]}
+					title={'Más Vendidos'}
+				/>
 
-					{/*Trending products showcase*/}
-					<ProductsShowcase
-						className={css({
-							gridColumn: { base: 'span 4', sm: 'span 12' },
-						})}
-						products={[...products]}
-						title={'Tendencias'}
-					/>
+				{/*Trending products showcase*/}
+				<ProductsShowcase
+					className={css({
+						gridColumn: { base: 'span 4', sm: 'span 12' },
+					})}
+					products={[...products]}
+					title={'Tendencias'}
+				/>
 
-					{/*New products showcase*/}
-					<ProductsShowcase
-						className={css({
-							gridColumn: { base: 'span 4', sm: 'span 12' },
-						})}
-						products={[...products]}
-						title={'Recien Llegados'}
-					/>
-				</div>
+				{/*New products showcase*/}
+				<ProductsShowcase
+					className={css({
+						gridColumn: { base: 'span 4', sm: 'span 12' },
+					})}
+					products={[...products]}
+					title={'Recien Llegados'}
+				/>
 			</div>
-		</>
+		</div>
 	);
 }

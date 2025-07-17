@@ -1,4 +1,4 @@
-import Table from '@/core/design-system/table/table';
+import Table from '@/modules/core/design-system/table/table';
 import { Product } from '@prisma/client';
 import { sva } from '@styled-system/css';
 import React from 'react';

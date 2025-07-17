@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { sva } from '@styled-system/css';
 import { Product } from '@prisma/client';
-import { Button } from '@/core/design-system';
+import { Button } from '@/modules/core/design-system';
 import { IconShoppingCartPlus } from '@tabler/icons-react';
 import { stack } from '@styled-system/patterns';
 
@@ -33,7 +33,7 @@ const ProductsShowcaseItemStyles = sva({
 			},
 		},
 		name: {
-			fontSize: 'medium',
+			fontSize: 'sm',
 			fontWeight: 700,
 			WebkitLineClamp: 2,
 			display: '-webkit-box',
@@ -88,6 +88,7 @@ export const ProductShowcaseItem = (props: ProductsShowcaseItemProps) => {
 			</div>
 
 			<Button
+				variant="brand1"
 				shape={'pill'}
 				size={'sm'}
 				icon={<IconShoppingCartPlus />}
