@@ -17,7 +17,7 @@ export const HeaderStyles = sva({
 		},
 		background: {
 			width: '100%',
-			backgroundImage: "url('/1752443709863.png')",
+			backgroundImage: "url('/background.jpg')",
 			backgroundSize: 'cover',
 			backgroundPosition: 'top',
 			backgroundRepeat: 'no-repeat no-repeat',
