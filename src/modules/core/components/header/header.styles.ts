@@ -14,6 +14,7 @@ export const HeaderStyles = sva({
 			fontSize: { base: '2xl', md: '4xl', lg: '6xl' },
 			fontWeight: 'bold',
 			width: 'full',
+			padding: 8
 		},
 		background: {
 			width: '100%',
@@ -21,9 +22,9 @@ export const HeaderStyles = sva({
 			backgroundSize: 'cover',
 			backgroundPosition: 'top',
 			backgroundRepeat: 'no-repeat no-repeat',
-			maskImage:'linear-gradient(black, transparent)',
+			maskImage: 'linear-gradient( to top, black 50%, transparent)',
 			textAlign: 'center',
-			height: '50vh',
+			height: '60vh',
 		},
 	},
 });
