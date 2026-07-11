@@ -1,0 +1,22 @@
+.logo {
+	width: auto;
+	height: 40px;
+
+	&--light {
+		display: block;
+	}
+
+	&--dark {
+		display: none;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		&--dark {
+			display: block;
+		}
+
+		&--light {
+			display: none;
+		}
+	}
+}
