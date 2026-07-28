@@ -14,18 +14,24 @@
 
 	// Variants
 	&--subtle {
-		background-color: var(--surface);
-		color: var(--on-surface);
+		background-color: var(--surface-color);
+		color: var(--on-surface-color);
+		border-style: solid;
+		border-width: 1px;
+		border-color: var(--border-color);
 		&:hover {
-			background-color: var(--surface-hover);
+			background-color: var(--surface-color-hover);
 		}
 	}
 
 	&--filled {
-		background-color: var(--on-surface);
-		color: var(--surface);
+		background-color: var(--on-surface-color);
+		color: var(--surface-color);
+		border-style: solid;
+		border-width: 1px;
+		border-color: var(--border-color);
 		&:hover {
-			background-color: var(--surface-hover);
+			background-color: var(--surface-color-hover);
 		}
 	}
 

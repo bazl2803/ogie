@@ -1,0 +1,61 @@
+.kbd {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Inter', sans-serif;
+	font-size: var(--font-size-xs, 0.75rem);
+	font-weight: var(--font-weight-medium, 500);
+	line-height: 1;
+	color: var(--on-surface-color, inherit);
+	background-color: var(--surface-color, rgba(255, 255, 255, 0.05));
+	border: 1px solid var(--border-color, rgba(255, 255, 255, 0.15));
+	box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.2);
+	user-select: none;
+	white-space: nowrap;
+
+	// Sizes
+	&--sm {
+		padding-inline: 0.25rem;
+		padding-block: 0.125rem;
+		min-width: 1.25rem;
+		height: 1.25rem;
+		font-size: 0.7rem;
+	}
+
+	&--md {
+		padding-inline: 0.375rem;
+		padding-block: 0.1875rem;
+		min-width: 1.5rem;
+		height: 1.5rem;
+		font-size: 0.75rem;
+	}
+
+	&--lg {
+		padding-inline: 0.5rem;
+		padding-block: 0.25rem;
+		min-width: 1.75rem;
+		height: 1.75rem;
+		font-size: 0.875rem;
+	}
+
+	// Rounded
+	&--rounded-none {
+		border-radius: 0;
+	}
+
+	&--rounded-sm {
+		border-radius: 0.25rem;
+	}
+
+	&--rounded-md {
+		border-radius: 0.375rem;
+	}
+
+	&--rounded-lg {
+		border-radius: 0.5rem;
+	}
+
+	&--rounded-full {
+		border-radius: 9999px;
+	}
+}

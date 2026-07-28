@@ -1,7 +1,7 @@
 .toolbar {
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
+	overflow: visible;
 	padding: 1rem;
 	gap: 1rem;
 
@@ -15,5 +15,9 @@
 	&__group {
 		display: flex;
 		gap: 0.5rem;
+
+		&:has(.command-box) {
+			align-self: flex-start;
+		}
 	}
 }

@@ -1,38 +1,33 @@
-'use client'
-
-import React, { useState, useRef, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Input } from '../../atoms/input/input'
+import { Command } from 'cmdk'
+import React, { ComponentPropsWithoutRef } from 'react'
+import { CommandBoxContext } from './command-box-context'
+import { CommandBoxInputWrapper } from './command-box-input-wrapper'
+import { CommandBoxInput } from './command-box-input'
+import { CommandBoxList } from './command-box-list'
+import { CommandBoxOption } from './command-box-option'
 import './command-box.scss'
-import { LiaSearchSolid } from 'react-icons/lia'
+import clsx from 'clsx'
+import { CommandBoxGroup } from './command-box-group'
 
-export interface CommandBoxItem {
-	id: string
-	label: string
-	description?: string
-	icon?: React.ReactNode
-	onSelect?: () => void
-}
-
-export interface CommandBoxProps {
-	placeholder?: string
-	items?: CommandBoxItem[]
-	onSearch?: (query: string) => void
+interface CommandBoxProps extends ComponentPropsWithoutRef<typeof Command> {
+	loop?: boolean
+	label?: string
+	children: React.ReactNode
 	className?: string
 }
 
-export function CommandBox({
-	placeholder = 'Type a command or search...',
-	items = [],
-	onSearch,
-	className = '',
-}: CommandBoxProps) {
-	const [isOpen, setIsOpen] = useState(false)
-	const [query, setQuery] = useState('')
-	const containerRef = useRef<HTMLDivElement>(null)
+const CommandBoxRoot: React.FC<CommandBoxProps> = ({
+	loop = true,
+	label,
+	children,
+	className,
+	...props
+}) => {
+	const [isOpen, setIsOpen] = React.useState(false)
+	const containerRef = React.useRef<HTMLDivElement | null>(null)
 
-	useEffect(() => {
-		function handleClickOutside(event: MouseEvent) {
+	React.useEffect(() => {
+		function handlePointerDown(event: PointerEvent) {
 			if (
 				containerRef.current &&
 				!containerRef.current.contains(event.target as Node)
@@ -40,96 +35,42 @@ export function CommandBox({
 				setIsOpen(false)
 			}
 		}
-		document.addEventListener('mousedown', handleClickOutside)
-		return () => {
-			document.removeEventListener('mousedown', handleClickOutside)
-		}
+
+		document.addEventListener('pointerdown', handlePointerDown)
+		return () => document.removeEventListener('pointerdown', handlePointerDown)
 	}, [])
 
-	const handleFocus = () => setIsOpen(true)
-
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		setQuery(e.target.value)
-		setIsOpen(true)
-		onSearch?.(e.target.value)
-	}
-
-	const filteredItems = items.filter(
-		(item) =>
-			item.label.toLowerCase().includes(query.toLowerCase()) ||
-			item.description?.toLowerCase().includes(query.toLowerCase()),
-	)
-
 	return (
-		<motion.div
-			className={`command-box ${isOpen ? 'command-box--open' : ''} ${className}`}
-			ref={containerRef}
-			layout
-			transition={{ duration: 0.2, ease: 'easeInOut' }}
+		<CommandBoxContext.Provider
+			value={{
+				loop,
+				isOpen,
+				setIsOpen,
+				containerRef,
+			}}
 		>
-			<div className="command-box__input-wrapper">
-				<Input>
-					<Input.Addon>
-						<LiaSearchSolid />
-					</Input.Addon>
-					<Input.Field
-						placeholder={placeholder}
-						value={query}
-						onChange={handleChange}
-						onFocus={handleFocus}
-					/>
-				</Input>
+			<div
+				className={clsx('command-box-root', className)}
+				data-commandbox-root
+			>
+				<Command
+					{...props}
+					loop={loop}
+					label={label}
+					className="command-box"
+					{...props}
+				>
+					{children}
+				</Command>
 			</div>
-
-			<AnimatePresence>
-				{isOpen && (
-					<motion.div
-						className="command-box__dropdown"
-						initial={{ opacity: 0, height: 0 }}
-						animate={{ opacity: 1, height: 'auto' }}
-						exit={{ opacity: 0, height: 0 }}
-						transition={{ duration: 0.2, ease: 'easeInOut' }}
-					>
-						<div className="command-box__dropdown-content">
-							{filteredItems.length > 0 ? (
-								<ul className="command-box__list">
-									{filteredItems.map((item) => (
-										<motion.li
-											key={item.id}
-											className="command-box__item"
-											onClick={() => {
-												item.onSelect?.()
-												setIsOpen(false)
-												setQuery('')
-											}}
-											whileHover={{ scale: 0.98 }}
-											whileTap={{ scale: 0.95 }}
-										>
-											{item.icon && (
-												<span className="command-box__item-icon">
-													{item.icon}
-												</span>
-											)}
-											<div className="command-box__item-text">
-												<span className="command-box__item-label">
-													{item.label}
-												</span>
-												{item.description && (
-													<span className="command-box__item-desc">
-														{item.description}
-													</span>
-												)}
-											</div>
-										</motion.li>
-									))}
-								</ul>
-							) : (
-								<div className="command-box__empty">No results found.</div>
-							)}
-						</div>
-					</motion.div>
-				)}
-			</AnimatePresence>
-		</motion.div>
+		</CommandBoxContext.Provider>
 	)
 }
+
+export const CommandBox = Object.assign(CommandBoxRoot, {
+	InputWrapper: CommandBoxInputWrapper,
+	Input: CommandBoxInput,
+	List: CommandBoxList,
+	Option: CommandBoxOption,
+	Group: CommandBoxGroup,
+})

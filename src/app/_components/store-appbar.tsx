@@ -1,9 +1,7 @@
 'use client'
-import { Button, CommandBox, Container, Logo, Toolbar } from '@/components'
-import {
-	LiaShoppingCartSolid,
-	LiaUserSolid,
-} from 'react-icons/lia'
+import { Button, Container, Logo, Toolbar } from '@/components'
+import { LiaShoppingCartSolid, LiaUserAltSolid } from 'react-icons/lia'
+import { StoreAppBarSearch } from './store-appbar-search'
 
 export function StoreAppBar() {
 	return (
@@ -14,13 +12,13 @@ export function StoreAppBar() {
 						<Logo />
 					</Toolbar.Group>
 					<Toolbar.Group>
-						<CommandBox placeholder="Search" />
+						<StoreAppBarSearch />
 					</Toolbar.Group>
 					<Toolbar.Group>
-						<Button size="icon-md">
-							<LiaUserSolid />
+						<Button size={'icon-md'}>
+							<LiaUserAltSolid />
 						</Button>
-						<Button size="icon-md">
+						<Button size={'icon-md'}>
 							<LiaShoppingCartSolid />
 						</Button>
 					</Toolbar.Group>

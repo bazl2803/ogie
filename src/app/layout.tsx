@@ -1,37 +1,33 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import '../styles/index.scss'
-import { StoreAppBar } from './_components/store-appbar'
-import { ThemeProvider } from '@/components/theme-provider'
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "../styles/index.scss";
+import { StoreAppBar } from "./_components/store-appbar";
+import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: 'Suministros Electricos',
-	description: 'Lideres en electricidad',
-}
+  title: "Suministros Electricos",
+  description: "Lideres en electricidad",
+};
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode
+  children: React.ReactNode;
 }>) {
-	return (
-		<html
-			lang="en"
-			className={inter.className}
-			suppressHydrationWarning
-		>
-			<body>
-				<ThemeProvider
-					attribute="data-theme"
-					defaultTheme="system"
-					enableSystem
-				>
-					<StoreAppBar />
-					{children}
-				</ThemeProvider>
-			</body>
-		</html>
-	)
+  return (
+    <html lang="en" className={inter.className} suppressHydrationWarning>
+      <body>
+        <ThemeProvider
+          attribute="data-theme"
+          defaultTheme="system"
+          enableSystem
+        >
+          <StoreAppBar />
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
 }

@@ -1,45 +1,77 @@
-import './input.scss'
+import React from "react";
+import "./input.scss";
+import { cva } from "class-variance-authority";
 
-export function Input({
-	children,
-	...props
-}: React.ComponentPropsWithRef<'div'>) {
-	return (
-		<div
-			className="input"
-			{...props}
-		>
-			{children}
-		</div>
-	)
+/* ---------------------------
+   Types
+--------------------------- */
+type InputVariants = "subtle" | "outline" | "none";
+
+export interface InputProps {
+  variant?: InputVariants;
 }
 
-function InputField({
-	children,
-	...props
-}: React.ComponentPropsWithRef<'input'>) {
-	return (
-		<input
-			className="input__field"
-			type="text"
-			{...props}
-		/>
-	)
+const InputVariants = cva("input", {
+  variants: {
+    variant: {
+      subtle: "input--subtle",
+      outline: "input--outline",
+      none: "input--none",
+    },
+  },
+});
+
+/* ---------------------------
+   Input
+--------------------------- */
+export function Input(
+  props: InputProps & React.ComponentPropsWithRef<"input">,
+) {
+  const { variant, ...rest } = props;
+  return <input {...rest} className={InputVariants({ variant })} />;
 }
 
-function InputAddon({
-	children,
-	...props
-}: React.ComponentPropsWithRef<'div'>) {
-	return (
-		<div
-			className="input__addon"
-			{...props}
-		>
-			{children}
-		</div>
-	)
+/* ---------------------------
+   Input Group (root)
+--------------------------- */
+interface InputGroupProps
+  extends InputProps,
+    React.ComponentPropsWithRef<"div"> {}
+
+const InputGroupVariants = cva("input__group", {
+  variants: {
+    variant: {
+      subtle: "input__group--subtle",
+      outline: "input__group--outline",
+      none: "input__group--none",
+    },
+  },
+});
+
+export function InputGroup(props: InputGroupProps) {
+  const { variant, ...rest } = props;
+  return <div {...rest} className={InputGroupVariants({ variant })} />;
 }
 
-Input.Field = InputField
-Input.Addon = InputAddon
+/* ---------------------------
+   Input Group Input
+--------------------------- */
+InputGroup.Input = function InputGroupInput(
+  props: React.ComponentPropsWithRef<"input">,
+) {
+  return <Input {...props} variant={"none"} />;
+};
+
+/* ---------------------------
+   Input Group Addon
+--------------------------- */
+InputGroup.Addon = function InputGroupAddon({
+  children,
+  ...props
+}: React.ComponentPropsWithRef<"div">) {
+  return (
+    <div className="input__addon" {...props}>
+      {children}
+    </div>
+  );
+};
