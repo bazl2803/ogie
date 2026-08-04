@@ -44,11 +44,6 @@ export const Categories = () => {
 	return (
 		<section className="categories">
 			<div className="categories-container">
-				<div className="categories-header">
-					<h2 className="categories-title">Categorías de Productos</h2>
-					<p className="categories-subtitle">Explora nuestras categorías de suministros eléctricos</p>
-				</div>
-
 				<div className="categories-grid">
 					{CATEGORIES.map((category) => {
 						const IconComponent = category.icon
@@ -57,9 +52,7 @@ export const Categories = () => {
 								<div className="categories-card-icon">
 									<IconComponent />
 								</div>
-								<h3 className="categories-card-title">{category.name}</h3>
-								<p className="categories-card-description">{category.description}</p>
-								<div className="categories-card-arrow">→</div>
+								<h3 className="categories-card-label">{category.name}</h3>
 							</div>
 						)
 					})}
