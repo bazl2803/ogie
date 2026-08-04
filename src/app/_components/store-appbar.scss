@@ -1,4 +1,15 @@
+@use '../../styles/index' as breakpoints;
+
 .store-appbar {
+	display: none;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+
+	@include breakpoints.md {
+		display: block;
+	}
+
 	&-search-item {
 		display: flex;
 		gap: var(--spacing-md);
@@ -7,7 +18,7 @@
 		&-image {
 			width: 48px;
 			height: 48px;
-			border-radius: var(--rounded-sm);
+			border-radius: var(--rounded-md);
 			corner-shape: round;
 		}
 
@@ -16,10 +27,15 @@
 			display: flex;
 			flex-direction: column;
 			gap: var(--spacing-xs);
+			user-select: none;
 
 			&-title {
-				font-size: var(--font-size-sm);
+				font-size: var(--font-size-md);
 				font-weight: var(--font-weight-medium);
+				display: -webkit-box;
+				-webkit-line-clamp: 1;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
 			}
 
 			&-price {

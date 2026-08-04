@@ -1,6 +1,5 @@
 import { CommandBox, InputGroup, Kbd } from '@/components'
 import Image from 'next/image'
-import './store-appbar.scss'
 import { LiaSearchSolid } from 'react-icons/lia'
 import { motion } from 'framer-motion'
 

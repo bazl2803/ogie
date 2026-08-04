@@ -2,10 +2,11 @@
 import { Button, Container, Logo, Toolbar } from '@/components'
 import { LiaShoppingCartSolid, LiaUserAltSolid } from 'react-icons/lia'
 import { StoreAppBarSearch } from './store-appbar-search'
+import './store-appbar.scss'
 
 export function StoreAppBar() {
 	return (
-		<Container>
+		<Container className='store-appbar'>
 			<Toolbar>
 				<Toolbar.Row>
 					<Toolbar.Group>
