@@ -7,8 +7,8 @@ import './store-appbar.scss'
 export function StoreAppBar() {
 	return (
 		<div className='store-appbar'>
+			<div className='store-appbar-background' />
 			<Container className='store-appbar-container'>
-				<div className='store-appbar-background' />
 				<Toolbar className='store-appbar-toolbar'>
 					<Toolbar.Row>
 						<Toolbar.Group>
