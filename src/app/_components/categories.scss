@@ -1,0 +1,80 @@
+@use '../../styles/breakpoints.scss' as breakpoints;
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+
+    &--header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &--desktop {
+        display: none;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-sm);
+
+        @include breakpoints.md {
+            display: grid;
+        }
+
+        .category-card {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md);
+            border-radius: var(--rounded-2xl);
+            background-color: light-dark(var(--color-neutral-50), var(--color-neutral-950));
+            color: light-dark(var(--color-neutral-950), var(--color-neutral-50));
+            outline: 1px solid var(--color-border);
+
+            &-icon {
+                width: var(--size-icon-md);
+                height: var(--size-icon-md);
+                fill: var(--color-bright-lemon-600);
+            }
+
+            &-icon-box {
+                display: grid;
+                place-items: center;
+                width: var(--size-icon-lg);
+                height: var(--size-icon-lg);
+                border-radius: var(--rounded-xl);
+                background-color: light-dark(var(--color-bright-lemon-50), var(--color-bright-lemon-950));
+            }
+
+            p {
+                font-size: var(--font-size-md);
+            }
+        }
+    }
+
+    &--mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+
+        @include breakpoints.md {
+            display: none;
+        }
+
+        .category-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            height: 10rem;
+            padding: var(--spacing-sm);
+            border-radius: var(--rounded-2xl);
+            background-color: var(--color-surface-background);
+            box-shadow: 0 1px 2px 0 var(--color-border);
+
+            p {
+                font-size: var(--font-size-xs);
+            }
+        }
+    }
+}

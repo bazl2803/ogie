@@ -1,17 +1,17 @@
 :root[data-theme='light'] {
-	--background-color: white;
-	--border-color: var(--color-neutral-200);
-	--border-color-hover: var(--color-neutral-300);
-	--surface-color: var(--color-neutral-50);
-	--surface-color-hover: var(--color-neutral-100);
-	--on-surface-color: black;
+	--color-background: white;
+	--color-border: var(--color-neutral-200);
+	--color-border-hover: var(--color-neutral-300);
+	--color-surface-background: var(--color-neutral-50);
+	--color-surface-foreground: black;
+	--color-surface-background-hover: var(--color-neutral-100);
 }
 
 :root[data-theme='dark'] {
-	--background-color: black;
-	--border-color: var(--color-neutral-700);
-	--border-color-hover: var(--color-neutral-600);
-	--surface-color: var(--color-neutral-950);
-	--surface-color-hover: var(--color-neutral-900);
-	--on-surface-color: white;
+	--color-background: black;
+	--color-border: var(--color-neutral-700);
+	--color-border-hover: var(--color-neutral-600);
+	--color-surface-background: var(--color-neutral-950);
+	--color-surface-foreground: white;
+	--color-surface-background-hover: var(--color-neutral-900);
 }

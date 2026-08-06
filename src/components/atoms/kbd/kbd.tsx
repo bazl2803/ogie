@@ -22,7 +22,7 @@ const kbdStyles = cva("kbd", {
   },
   defaultVariants: {
     size: "md",
-    rounded: "md",
+    rounded: "full",
   },
 });
 

@@ -1,6 +1,6 @@
 import { Button, Logo } from '@/components'
 import './hero.scss'
-import { LiaPhoneSolid, LiaTruckSolid } from 'react-icons/lia'
+import { LiaBoxOpenSolid, LiaPhoneSolid, LiaStoreSolid, LiaTruckSolid } from 'react-icons/lia'
 
 export const Hero = () => {
 	return (
@@ -26,19 +26,31 @@ export const Hero = () => {
 					<Button variant='filled'>Ver Productos</Button>
 					<Button>Contáctanos</Button>
 				</div>
+			</div>
 
-				<div className="hero-floating-card">
-					<div className='hero-floating-card-item'>
-						<LiaTruckSolid className='hero-floating-card-item-icon' />
-						<span className='hero-floating-card-item-title'>Envíos a Domicilio</span>
-						<p className='hero-floating-card-item-description'>Realizamos entregas rápidas y seguras directamente en su puerta.</p>
-					</div>
+			<div className="hero-services">
+				<div className='hero-services-item'>
+					<LiaTruckSolid className='hero-services-item-icon' />
+					<span className='hero-services-item-title'>Envíos a Domicilio</span>
+					<p className='hero-services-item-description'>
+						Realizamos envíos a todo El Salvador.
+					</p>
+				</div>
 
-					<div className='hero-floating-card-item'>
-						<LiaPhoneSolid className='hero-floating-card-item-icon' />
-						<span className='hero-floating-card-item-title'>Asesoría Personalizada</span>
-						<p className='hero-floating-card-item-description'>Asesoría personalizada para ayudarte en tus proyectos.</p>
-					</div>
+				<div className='hero-services-item'>
+					<LiaStoreSolid className='hero-services-item-icon' />
+					<span className='hero-services-item-title'>Retiro en Tienda</span>
+					<span className='hero-services-item-description'>
+						Visítanos en nuestras sucursales en Sonsonate.
+					</span>
+				</div>
+
+				<div className='hero-services-item'>
+					<LiaBoxOpenSolid className='hero-services-item-icon' />
+					<span className='hero-services-item-title'>Productos de Calidad</span>
+					<span className='hero-services-item-description'>
+						Productos de alta calidad para sus proyectos.
+					</span>
 				</div>
 			</div>
 		</section>

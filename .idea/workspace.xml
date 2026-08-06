@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fae48cb-898d-444f-ac8c-39b191cbe60e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/_components/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/hero.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/_components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/store-appbar-search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/store-appbar-search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/store-appbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/store-appbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/store-appbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/store-appbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/command-box/command-box.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/command-box/command-box.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/button/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/button/button.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +19,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="3HErk5ujvc1GFaybSdDHnqeYmSE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -45,6 +44,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "bun",
     "npm.Next.js: server-side.executor": "Run",
+    "ts.external.directory.path": "C:\\Users\\bryan\\OneDrive\\Documents\\Projects\\ogie\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -78,6 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1785444248682</updated>
       <workItem from="1785444279678" duration="2700000" />
+      <workItem from="1785877422787" duration="7467000" />
     </task>
     <servers />
   </component>
