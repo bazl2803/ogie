@@ -1,6 +1,7 @@
 .logo {
 	width: auto;
 	height: 40px;
+	filter: drop-shadow(0px 0px 4px light-dark(white, black));
 
 	&--light {
 		display: block;

@@ -1,0 +1,63 @@
+@use '../../../styles/index' as breakpoint;
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            font-size: var(--font-size-2xl);
+        }
+    }
+
+    &-wrapper {
+        display: grid;
+        gap: var(--spacing-lg);
+        grid-template-columns: repeat(2, 1fr);
+
+        & .category-card:nth-child(n+3) {
+            display: none;
+        }
+
+        @include breakpoint.md {
+            grid-template-columns: repeat(4, 1fr);
+
+            & .category-card:nth-child(n+2) {
+                display: flex;
+            }
+
+            & .category-card:nth-child(n+5) {
+                display: none;
+            }
+        }
+
+        @include breakpoint.lg {
+            grid-template-columns: repeat(6, 1fr);
+
+            & .category-card:nth-child(n+5) {
+                display: flex;
+            }
+
+            & .category-card:nth-child(n+7) {
+                display: none;
+            }
+        }
+
+        @include breakpoint.xl {
+            grid-template-columns: repeat(8, 1fr);
+
+            & .category-card:nth-child(n+5) {
+                display: flex;
+            }
+
+            & .category-card:nth-child(n+9) {
+                display: none;
+            }
+        }
+    }
+}

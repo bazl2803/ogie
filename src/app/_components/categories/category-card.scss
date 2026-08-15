@@ -1,0 +1,46 @@
+@use "../../../styles/index" as breakpoint;
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: var(--rounded-3xl);
+
+    &-image-wrapper {
+        background-color: var(--color-surface-background);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(--spacing-sm);
+        border-radius: var(--rounded-3xl);
+        width: 100%;
+        aspect-ratio: 1;
+        flex: 1;
+    }
+
+    &-image {
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: contain;
+        filter: contrast(105%) brightness(105%);
+    }
+
+    &-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: var(--spacing-sm);
+        font-size: var(--font-size-md);
+        line-height: 1.2;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}

@@ -1,4 +1,4 @@
-@use '../../styles/index' as breakpoints;
+@use "../../../styles/index" as breakpoints;
 
 .store-appbar {
 	display: none;
@@ -23,11 +23,11 @@
 	&-background {
 		position: absolute;
 		inset: 0;
-		backdrop-filter: blur(12px);
-		background-color: light-dark(hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 0%, 0.5));
-		mask-image: linear-gradient(to bottom, black 25%, transparent 100%);
+		backdrop-filter: blur(4px);
+		padding-bottom: var(--spacing-3xl);
+		background: linear-gradient(to bottom, light-dark(white, black) 0%, transparent 100%);
+		mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 		z-index: 1;
-		padding-bottom: var(--spacing-5xl);
 	}
 
 	&-search-item {
@@ -60,7 +60,7 @@
 			}
 
 			&-price {
-				color: var(--color-neutral-400);
+				color: light-dark(var(--color-neutral-600), var(--color-neutral-400));
 				font-size: var(--font-size-sm);
 				font-weight: var(--font-weight-medium);
 			}

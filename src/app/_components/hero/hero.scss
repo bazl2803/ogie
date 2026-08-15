@@ -1,4 +1,4 @@
-@use '../../styles/index' as breakpoints;
+@use '../../../styles/index' as breakpoints;
 
 .hero {
 	display: flex;
@@ -11,7 +11,7 @@
 		width: 100%;
 		gap: var(--spacing-xl);
 		padding: var(--spacing-2xl) var(--spacing-lg);
-		border-radius: var(--rounded-2xl);
+		border-radius: var(--rounded-3xl);
 		max-width: var(--size-7xl);
 		margin: 0;
 		position: relative;
@@ -104,11 +104,11 @@
 			grid-column: 2;
 			grid-row: 5 / 6;
 			justify-self: end;
-			background-color: color-mix(in srgb, var(--color-surface-background) 75%, transparent);
+			background-color: light-dark(#ffffffde, #000000de);
 			backdrop-filter: blur(10px);
 			outline: 1px solid var(--color-border);
-			border-radius: var(--rounded-2xl);
-			padding: var(--spacing-md);
+			border-radius: var(--rounded-3xl);
+			padding: var(--spacing-md) var(--spacing-lg);
 			margin-left: auto;
 			margin-top: -2rem;
 			margin-right: -1rem;
