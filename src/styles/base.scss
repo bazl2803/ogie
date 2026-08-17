@@ -1,4 +1,9 @@
+html,
+body {
+	overflow-x: clip;
+}
+
 body {
 	color-scheme: light dark;
-	background-color: var(--background-color);
+	background-color: var(--color-background);
 }

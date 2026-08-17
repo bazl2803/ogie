@@ -1,4 +1,4 @@
-@use '../../../styles/index' as breakpoint;
+@use "@/styles/breakpoints" as breakpoint;
 
 .categories {
     display: flex;
@@ -12,52 +12,20 @@
 
         h2 {
             font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-surface-foreground);
         }
     }
 
-    &-wrapper {
-        display: grid;
-        gap: var(--spacing-lg);
-        grid-template-columns: repeat(2, 1fr);
+    .carousel {
+        padding-block: var(--spacing-sm);
+    }
 
-        & .category-card:nth-child(n+3) {
-            display: none;
-        }
+    .carousel__item {
+        width: 140px;
 
         @include breakpoint.md {
-            grid-template-columns: repeat(4, 1fr);
-
-            & .category-card:nth-child(n+2) {
-                display: flex;
-            }
-
-            & .category-card:nth-child(n+5) {
-                display: none;
-            }
-        }
-
-        @include breakpoint.lg {
-            grid-template-columns: repeat(6, 1fr);
-
-            & .category-card:nth-child(n+5) {
-                display: flex;
-            }
-
-            & .category-card:nth-child(n+7) {
-                display: none;
-            }
-        }
-
-        @include breakpoint.xl {
-            grid-template-columns: repeat(8, 1fr);
-
-            & .category-card:nth-child(n+5) {
-                display: flex;
-            }
-
-            & .category-card:nth-child(n+9) {
-                display: none;
-            }
+            width: 160px;
         }
     }
 }

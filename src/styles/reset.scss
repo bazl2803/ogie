@@ -4,6 +4,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 * {
@@ -23,6 +24,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  -webkit-user-drag: none;
 }
 
 input,
@@ -33,6 +35,10 @@ select {
   outline: none;
   border: none;
   background: transparent;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
 }
 
 button {

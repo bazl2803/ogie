@@ -12,3 +12,4 @@ export * from "./molecules/command-box/command-box-list";
 export * from "./molecules/command-box/command-box-option";
 export * from "./molecules/command-box/command-box";
 export * from "./molecules/toolbar/toolbar";
+export * from "./molecules/carousel/carousel";

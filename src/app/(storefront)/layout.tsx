@@ -2,7 +2,7 @@ import { Container } from "@/components";
 import { StoreAppBar } from "../_components/appbar/store-appbar";
 import { StoreFooter } from "../_components/footer/store-footer";
 
-export default function StoreLayout({
+export default function StorefrontLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -13,6 +13,7 @@ export default function StoreLayout({
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
+        gap: "var(--spacing-sm)",
       }}
     >
       <StoreAppBar />
