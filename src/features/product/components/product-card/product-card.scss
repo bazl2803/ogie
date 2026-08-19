@@ -3,21 +3,13 @@
 .product-card {
     display: flex;
     flex-direction: column;
-    border-radius: var(--rounded-2xl);
     overflow: hidden;
-    background-color: var(--color-surface-background);
-    border: 1px solid var(--color-border);
     transition: box-shadow 0.25s ease, border-color 0.25s ease;
     cursor: pointer;
     will-change: transform;
     user-select: none;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
-
-    &:hover {
-        border-color: var(--color-border-hover);
-        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
-    }
 
     &__image-container {
         position: relative;
@@ -28,7 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: var(--spacing-md);
+        border-radius: var(--rounded-3xl);
     }
 
     &__image {
@@ -48,7 +40,7 @@
         left: var(--spacing-sm);
         z-index: 2;
         padding: var(--spacing-xs) var(--spacing-sm);
-        border-radius: var(--rounded-full);
+        border-radius: var(--rounded-4xl);
         font-size: var(--font-size-xs);
         font-weight: var(--font-weight-semibold);
         text-transform: uppercase;
@@ -59,7 +51,7 @@
     }
 
     &__content {
-        padding: var(--spacing-md);
+        padding: var(--spacing-md) var(--spacing-sm);
         display: flex;
         flex-direction: column;
         gap: var(--spacing-xs);

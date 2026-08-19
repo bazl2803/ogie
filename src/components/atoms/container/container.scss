@@ -2,18 +2,9 @@
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-inline: 1rem;
 	/* Define as a CSS query container so contents can react to its size */
 	container-type: inline-size;
 	container-name: container;
-
-	@media (min-width: 640px) {
-		padding-inline: 1.5rem;
-	}
-
-	@media (min-width: 1024px) {
-		padding-inline: 2rem;
-	}
 
 	&--responsive {
 		@media (min-width: 640px) {

@@ -1,48 +1,55 @@
 @use "@/styles/breakpoints" as breakpoint;
 
 .products-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding-inline: var(--spacing-md);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: var(--spacing-md);
+  }
+
+  &__header-info {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-xs);
+  }
 
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        gap: var(--spacing-md);
+  &__title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-surface-foreground);
+  }
+
+  &__description {
+    font-size: var(--font-size-sm);
+    color: var(--color-neutral-500);
+    margin: 0;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+
+    @include breakpoint.sm {
+      grid-template-columns: repeat(3, 1fr);
     }
 
-    &__header-info {
-        display: flex;
-        flex-direction: column;
-        gap: var(--spacing-xs);
+    @include breakpoint.md {
+      grid-template-columns: repeat(4, 1fr);
     }
 
-    &__title {
-        font-size: var(--font-size-2xl);
-        font-weight: var(--font-weight-bold);
-        color: var(--color-surface-foreground);
+    @include breakpoint.lg {
+      grid-template-columns: repeat(5, 1fr);
     }
 
-    &__description {
-        font-size: var(--font-size-sm);
-        color: var(--color-neutral-500);
-        margin: 0;
+    @include breakpoint.xl {
+      grid-template-columns: repeat(6, 1fr);
     }
-
-    &__content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-md);
-
-        @include breakpoint.md {
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--spacing-lg);
-        }
-
-        @include breakpoint.lg {
-            grid-template-columns: repeat(4, 1fr);
-            gap: var(--spacing-lg);
-        }
-    }
+  }
 }

@@ -16,6 +16,7 @@
         flex-direction: column;
         gap: var(--spacing-3xl);
         padding-block: var(--spacing-3xl) var(--spacing-xl);
+        padding-inline: var(--spacing-md);
     }
 
     &__top {

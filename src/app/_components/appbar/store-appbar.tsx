@@ -8,7 +8,7 @@ export function StoreAppBar() {
   return (
     <div className="store-appbar">
       <div className="store-appbar-background" />
-      <Container className="store-appbar-container">
+      <Container size={"xl"} className="store-appbar-container">
         <Toolbar className="store-appbar-toolbar">
           <Toolbar.Row>
             <Toolbar.Group>

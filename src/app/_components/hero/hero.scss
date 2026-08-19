@@ -1,4 +1,4 @@
-@use '../../../styles/index' as breakpoints;
+@use '@/styles/breakpoints' as breakpoints;
 
 .hero {
 	display: flex;
@@ -6,27 +6,37 @@
 	justify-content: center;
 
 	&-wrapper {
-		display: grid;
-		grid-template-columns: 1fr;
-		width: 100%;
-		gap: var(--spacing-xl);
-		padding: var(--spacing-2xl) var(--spacing-lg);
-		border-radius: var(--rounded-3xl);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: var(--spacing-lg) var(--spacing-md);
+		gap: var(--spacing-lg);
 		max-width: var(--size-7xl);
+		height: 30rem;
 		margin: 0;
 		position: relative;
 		overflow: hidden;
 
-		@include breakpoints.md {
+		@include breakpoints.lg {
+			display: grid;
 			grid-template-columns: 1fr 1fr;
+			gap: var(--spacing-xl);
+			height: min-content;
 			align-items: center;
+			border-radius: var(--rounded-3xl);
+			padding: var(--spacing-2xl) var(--spacing-lg);
 		}
 	}
 
 	&-decoration {
-		--decoration-border-color: light-dark(var(--color-bright-lemon-600), var(--color-bright-lemon-400));
-		--decoration-text-color: light-dark(var(--color-bright-lemon-600), var(--color-bright-lemon-400));
+		--decoration-border-color: light-dark(
+						var(--color-bright-lemon-600),
+						var(--color-bright-lemon-400));
+		--decoration-text-color: light-dark(
+						var(--color-bright-lemon-600),
+						var(--color-bright-lemon-400));
 
+		display: none;
 		font-weight: var(--font-weight-medium);
 		outline: 1px solid var(--decoration-border-color);
 		color: var(--decoration-text-color);
@@ -35,48 +45,71 @@
 		border-radius: var(--rounded-3xl);
 		z-index: 1;
 
-		@include breakpoints.md {
+		@include breakpoints.lg {
+			display: block;
 			grid-column: 1 / -1;
 		}
 	}
 
 	&-background {
+		--background-direction: to top;
+		--background-size: 40%;
+
 		position: absolute;
 		inset: 0;
-		background-image: url('/hero-image1.png');
-		background-position: center;
-		background-size: cover;
+		background-image: url('../../../../public/hero-image2.png');
+		background-position: right bottom;
+		background-size: contain;
 		background-repeat: no-repeat;
-		mask-image: light-dark(linear-gradient(to left, white 25%, transparent 75%), linear-gradient(to left, black 50%, transparent 80%));
+		mask-image: linear-gradient(var(--background-direction),
+			white 0%,
+			transparent var(--background-size));
+
+		@include breakpoints.lg {
+			--background-direction: to left;
+			--background-size: 75%;
+			background-position: right center;
+		}
 	}
 
 	&-logo {
-		@include breakpoints.md {
+		@include breakpoints.lg {
 			display: none;
 		}
 	}
 
-	&-content {
-		font-size: var(--font-size-xl);
+	&-heading {
+		font-size: var(--font-size-lg);
 		line-height: var(--line-height-tight);
 		padding-block: var(--spacing-sm);
 		text-wrap: pretty;
 		z-index: 1;
 		color: light-dark(black, white);
+		text-align: center;
+		filter: drop-shadow(0px 0px 8px light-dark(
+						var(--color-neutral-100),
+						var(--color-neutral-900)));
 
-		@include breakpoints.md {
+		@include breakpoints.lg {
+			font-size: var(--font-size-xl);
+		}
+
+		@include breakpoints.lg {
 			font-size: var(--font-size-2xl);
-			grid-column: 1;
+			text-align: left;
 		}
 	}
 
 	&-description {
-		text-wrap: balance;
-		max-width: 50%;
-		z-index: 1;
-		color: light-dark(black, white);
+		display: none;
 
-		@include breakpoints.md {
+		@include breakpoints.lg {
+			display: block;
+			font-size: var(--font-size-md);
+			text-wrap: balance;
+			z-index: 1;
+			color: light-dark(black, white);
+			text-align: left;
 			grid-column: 1;
 			max-width: 100%;
 		}
@@ -87,16 +120,16 @@
 		gap: var(--spacing-md);
 		z-index: 1;
 
-		@include breakpoints.md {
+		@include breakpoints.lg {
 			grid-column: 1;
 		}
 	}
 
 	&-services {
 		display: none;
-		box-shadow: 0px 0px 8px light-dark(var(--color-neutral-100), var(--color-neutral-900));
+		box-shadow: 0 0 8px light-dark(var(--color-neutral-100), var(--color-neutral-900));
 
-		@include breakpoints.md {
+		@include breakpoints.lg {
 			display: flex;
 			z-index: 1;
 			width: min-content;
@@ -104,7 +137,7 @@
 			grid-column: 2;
 			grid-row: 5 / 6;
 			justify-self: end;
-			background-color: light-dark(#ffffffde, #000000de);
+			background-color: light-dark(rgba(255 255 255 / 0.6), rgba(0 0 0 / 0.6));
 			backdrop-filter: blur(10px);
 			outline: 1px solid var(--color-border);
 			border-radius: var(--rounded-3xl);

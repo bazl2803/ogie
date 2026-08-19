@@ -53,6 +53,32 @@ export const newProducts: Product[] = [
     updatedAt: new Date(),
     slug: "panel-led-embutido-redondo-18w-luz-fria",
   },
+  {
+    id: "np-5",
+    name: "Foco LED A60 E27 9W Luz Cálida 4000K",
+    price: 3.75,
+    image: "/assets/categories/iluminacion.webp",
+    description:
+      "Foco LED de bajo consumo con chips SMD de alta eficiencia y una vida útil de 25,000 horas.",
+    category: "Iluminación",
+    badge: "Nuevo",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    slug: "foco-led-a60-e27-9w-luz-calida-4000k",
+  },
+  {
+    id: "np-6",
+    name: "Cinta LED Flexible RGB 5m con Control Remoto",
+    price: 15.99,
+    image: "/assets/categories/iluminacion.webp",
+    description:
+      "Cinta adhesiva LED multicolor con 16 tonos, 4 modos de efecto y control remoto infrarrojo.",
+    category: "Iluminación",
+    badge: "Nuevo",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    slug: "cinta-led-flexible-rgb-5m-control-remoto",
+  },
 ];
 
 export const bestSellersProducts: Product[] = [
@@ -108,6 +134,32 @@ export const bestSellersProducts: Product[] = [
     updatedAt: new Date(),
     slug: "alicate-universal-aislado-1000v-profesional",
   },
+  {
+    id: "bs-5",
+    name: "Regleta de Protección 6 Toma interruptor Term.",
+    price: 14.99,
+    image: "/assets/categories/regleta.webp",
+    description:
+      "Regleta empotrada con interruptor termomagnético integrado y contactos shuttered de seguridad.",
+    category: "Plaquería",
+    badge: "Top Ventas",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    slug: "regleta-proteccion-6-toma-interruptor-term",
+  },
+  {
+    id: "bs-6",
+    name: "Cable THHN Calibre 10 AWG Rollo 50m",
+    price: 45.0,
+    image: "/assets/categories/cables.webp",
+    description:
+      "Cable de cobre multiestrando con aislamiento de PVC resistente a la intemperie y aceites industriales.",
+    category: "Cables",
+    badge: "Top Ventas",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    slug: "cable-thhn-calibre-10-awg-rollo-50m",
+  },
 ];
 
 export const trendingProducts: Product[] = [
@@ -162,5 +214,31 @@ export const trendingProducts: Product[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     slug: "tomacorrientes-industriales-enchufe-3p-t",
+  },
+  {
+    id: "tr-5",
+    name: "Transformador de Corriente 200/5A Clase 1",
+    price: 62.0,
+    image: "/assets/categories/transformador.webp",
+    description:
+      "Transformador de corriente tipo anillo para medición en tableros de distribución de alta precisión.",
+    category: "Transformadores",
+    badge: "Tendencia",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    slug: "transformador-corriente-200-5a-clase-1",
+  },
+  {
+    id: "tr-6",
+    name: "Extensión enrollable 3 Toma 15m Industrial",
+    price: 27.5,
+    image: "/assets/categories/extension.webp",
+    description:
+      "Cable enrollable auto-retráctil con carrete metálico y protección IP44 para uso en exteriores.",
+    category: "Extensiones",
+    badge: "Tendencia",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    slug: "extension-enrollable-3-toma-15m-industrial",
   },
 ];

@@ -2,7 +2,6 @@ import { Button, Logo } from "@/components";
 import "./hero.scss";
 import {
   LiaBoxOpenSolid,
-  LiaPhoneSolid,
   LiaStoreSolid,
   LiaTruckSolid,
 } from "react-icons/lia";
@@ -13,13 +12,13 @@ export const Hero = () => {
       <div className="hero-wrapper">
         <div className="hero-background" />
 
-        <span className="hero-decoration">Suministros Eléctricos</span>
-
         <div className="hero-logo">
           <Logo />
         </div>
 
-        <div className="hero-content">
+        <span className="hero-decoration">Tienda Especializada</span>
+
+        <div className="hero-heading">
           <h1>
             Soluciones Eléctricas <br /> para su Hogar <br /> o Proyecto
           </h1>
