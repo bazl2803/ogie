@@ -1,31 +1,76 @@
 @use "@/styles/breakpoints" as breakpoint;
 
 .categories {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+
+  &-header {
     display: flex;
-    flex-direction: column;
-    gap: var(--spacing-lg);
+    justify-content: space-between;
+    align-items: center;
 
-    &-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    h2 {
+      font-size: var(--font-size-2xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--color-surface-foreground);
+    }
+  }
 
-        h2 {
-            font-size: var(--font-size-2xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-surface-foreground);
-        }
+  &--mobile {
+    @include breakpoint.sm {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    --columns-length: 4;
+    display: none;
+
+    @include breakpoint.sm {
+      display: grid;
+      grid-template-columns: repeat(var(--columns-length), 1fr);
+      gap: var(--spacing-md);
+
+      &:nth-child(n+5) {
+        display: none;
+      }
     }
 
-    .carousel {
-        padding-block: var(--spacing-sm);
+    @include breakpoint.md {
+      --columns-length: 6;
+
+      &:nth-child(n+5) {
+        display: block;
+      }
+
+      &:nth-child(n+7) {
+        display: none;
+      }
     }
 
-    .carousel__item {
-        width: 140px;
+    @include breakpoint.lg {
+      --columns-length: 8;
 
-        @include breakpoint.md {
-            width: 160px;
-        }
+      &:nth-child(n+7) {
+        display: block;
+      }
+
+      &:nth-child(n+9) {
+        display: none
+      }
     }
+  }
+
+  .carousel {
+    padding-block: var(--spacing-sm);
+  }
+
+  .carousel__item {
+    width: 140px;
+
+    @include breakpoint.md {
+      width: 160px;
+    }
+  }
 }
