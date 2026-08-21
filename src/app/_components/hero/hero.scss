@@ -29,12 +29,10 @@
 	}
 
 	&-decoration {
-		--decoration-border-color: light-dark(
-						var(--color-bright-lemon-600),
-						var(--color-bright-lemon-400));
-		--decoration-text-color: light-dark(
-						var(--color-bright-lemon-600),
-						var(--color-bright-lemon-400));
+		--decoration-border-color: light-dark(var(--color-bright-lemon-600),
+				var(--color-bright-lemon-400));
+		--decoration-text-color: light-dark(var(--color-bright-lemon-600),
+				var(--color-bright-lemon-400));
 
 		display: none;
 		font-weight: var(--font-weight-medium);
@@ -62,8 +60,8 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 		mask-image: linear-gradient(var(--background-direction),
-			white 0%,
-			transparent var(--background-size));
+				white 25%,
+				transparent var(--background-size));
 
 		@include breakpoints.lg {
 			--background-direction: to left;
@@ -86,9 +84,8 @@
 		z-index: 1;
 		color: light-dark(black, white);
 		text-align: center;
-		filter: drop-shadow(0px 0px 8px light-dark(
-						var(--color-neutral-100),
-						var(--color-neutral-900)));
+		filter: drop-shadow(0px 0px 8px light-dark(var(--color-neutral-100),
+					var(--color-neutral-900)));
 
 		@include breakpoints.lg {
 			font-size: var(--font-size-xl);
