@@ -1,0 +1,69 @@
+@use "@/styles/breakpoints" as breakpoints;
+
+.store-appbar {
+	display: none;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+
+	@include breakpoints.md {
+		display: block;
+	}
+
+	&-container {
+		position: relative;
+		z-index: 2;
+	}
+
+	&-toolbar {
+		position: relative;
+		z-index: 2;
+	}
+
+	&-background {
+		position: absolute;
+		inset: 0;
+		backdrop-filter: blur(4px);
+		padding-bottom: var(--spacing-3xl);
+		background: linear-gradient(to bottom, light-dark(white, black) 0%, transparent 100%);
+		mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+		z-index: 1;
+	}
+
+	&-search-item {
+		display: flex;
+		gap: var(--spacing-md);
+		width: 100%;
+
+		&-image {
+			width: 48px;
+			height: 48px;
+			border-radius: var(--rounded-md);
+			corner-shape: round;
+		}
+
+		&-content {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			gap: var(--spacing-xs);
+			user-select: none;
+			z-index: 2;
+
+			&-title {
+				font-size: var(--font-size-md);
+				font-weight: var(--font-weight-medium);
+				display: -webkit-box;
+				-webkit-line-clamp: 1;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+			}
+
+			&-price {
+				color: light-dark(var(--color-neutral-600), var(--color-neutral-400));
+				font-size: var(--font-size-sm);
+				font-weight: var(--font-weight-medium);
+			}
+		}
+	}
+}
