@@ -1,6 +1,6 @@
 import {Container} from "@/components";
-import {StoreAppBar} from "../_components/appbar/store-appbar";
-import {StoreFooter} from "../_components/footer/store-footer";
+import {StoreAppBar} from "./_components/appbar/store-appbar";
+import {StoreFooter} from "./_components/footer/store-footer";
 import React from "react";
 
 export default function StorefrontLayout({children}: {

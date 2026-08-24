@@ -1,17 +1,19 @@
-import {Categories} from "@/app/_components/categories/categories";
-import {Hero} from "@/app/_components/hero/hero";
+import { Hero } from "./_components/hero/hero";
+import { Categories } from "./_components/categories/categories";
 import {
-    bestSellersProducts,
-    newProducts,
     ProductsShowcase,
     trendingProducts,
+    bestSellersProducts,
+    newProducts,
 } from "@/features/product";
+import {Services} from "@/app/(storefront)/_components/services/services";
 
 export default function Home() {
     return (
         <>
-            <Hero/>
-            <Categories/>
+            <Hero />
+            <Services/>
+            <Categories />
             <ProductsShowcase
                 title="Más Vendidos"
                 description="Los productos favoritos y más solicitados por nuestros clientes"

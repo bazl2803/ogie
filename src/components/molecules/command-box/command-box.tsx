@@ -1,13 +1,15 @@
-import { Command } from "cmdk";
-import React, { ComponentPropsWithoutRef } from "react";
-import { CommandBoxContext } from "./command-box-context";
-import { CommandBoxInputWrapper } from "./command-box-input-wrapper";
-import { CommandBoxInput } from "./command-box-input";
-import { CommandBoxList } from "./command-box-list";
-import { CommandBoxOption } from "./command-box-option";
+import {Command} from "cmdk";
+import React, {ComponentPropsWithoutRef} from "react";
+import {
+  CommandBoxContext,
+  CommandBoxGroup,
+  CommandBoxInput,
+  CommandBoxInputWrapper,
+  CommandBoxList,
+  CommandBoxOption
+} from "@/components";
 import "./command-box.scss";
 import clsx from "clsx";
-import { CommandBoxGroup } from "./command-box-group";
 
 interface CommandBoxProps extends ComponentPropsWithoutRef<typeof Command> {
   loop?: boolean;
@@ -55,6 +57,7 @@ const CommandBoxRoot: React.FC<CommandBoxProps> = ({
           loop={loop}
           label={label}
           className={clsx("command-box", { "command-box--open": isOpen })}
+          ref={containerRef}
           {...props}
         >
           {children}
