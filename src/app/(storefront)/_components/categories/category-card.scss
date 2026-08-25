@@ -12,9 +12,10 @@
     -webkit-touch-callout: none;
 
     &-image-wrapper {
-        background: light-dark(
-            radial-gradient(circle at center, #ffffff 0%, var(--color-neutral-100) 100%),
-            radial-gradient(circle at center, var(--color-neutral-800) 0%, var(--color-neutral-900) 100%)
+        background: radial-gradient(
+                circle at center,
+                light-dark(#ffffff, var(--color-neutral-800)) 0%,
+                light-dark(var(--color-neutral-100), var(--color-neutral-900)) 100%
         );
         border: 1px solid var(--color-border);
         position: relative;
