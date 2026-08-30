@@ -7,22 +7,22 @@ export const Services = () => {
         {
             icon: LiaTruckSolid,
             title: "Envios a Domicilio",
-            description: "Realizamos envíos a todo El Salvador."
+            description: "Enviamos a todo El Salvador"
         },
         {
             icon: LiaStoreSolid,
             title: "Retiro en Tienda",
-            description: "Puedes retirar tus productos en nuestra tienda."
+            description: "Visita nuestra tienda"
         },
         {
             icon: LiaBoxOpenSolid,
-            title: "Amplio catálogo de productos",
-            description: "Tenemos una amplia gama de productos para ti."
+            title: "Productos de Calidad",
+            description: "Encuentra los mejores productos"
         },
         {
             icon: LiaCreditCardSolid,
             title: "Pago seguro",
-            description: "Realice su compra de forma segura."
+            description: "Realiza tu pago de forma segura"
         }
     ];
 

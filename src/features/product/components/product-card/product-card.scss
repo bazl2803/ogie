@@ -15,12 +15,13 @@
         position: relative;
         width: 100%;
         aspect-ratio: 1 / 1;
-        background-color: light-dark(var(--color-neutral-100), var(--color-neutral-900));
+        background-color: white;
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: var(--rounded-3xl);
+        padding: var(--spacing-sm);
     }
 
     &__image {

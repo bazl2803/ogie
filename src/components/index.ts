@@ -1,6 +1,8 @@
 export * from "./theme-provider";
 export * from "./atoms/button/button";
 export * from "./atoms/container/container";
+export * from "./atoms/dropdown/dropdown";
+export * from "./atoms/dropdown/dropdown.context";
 export * from "./atoms/input/input";
 export * from "./atoms/kbd/kbd";
 export * from "./atoms/logo/logo";
@@ -13,3 +15,4 @@ export * from "./molecules/command-box/command-box-option";
 export * from "./molecules/command-box/command-box";
 export * from "./molecules/toolbar/toolbar";
 export * from "./molecules/carousel/carousel";
+export * from "./organisms/sidebar";

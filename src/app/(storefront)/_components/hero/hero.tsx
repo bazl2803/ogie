@@ -11,18 +11,16 @@ export const Hero = () => {
           <Logo />
         </div>
 
-        <span className="hero-decoration">Tienda Especializada</span>
+        <span className="hero-decoration">Material Eléctrico</span>
 
         <div className="hero-heading">
           <h1>
-            Soluciones Eléctricas <br /> para su Hogar <br /> o Proyecto
+            Soluciones Eléctricas <br /> para su Hogar o Proyecto
           </h1>
         </div>
 
         <p className="hero-description">
-          Contamos con una amplia gama de productos eléctricos para iluminacion,
-          tomacorrientes, cables, herramientas, tuberias, reflectores y todo lo
-          necesario para sus proyectos.
+          Encuentra todo lo que necesitas para tus instalaciones eléctricas. Productos de calidad, herramientas profesionales y soluciones confiables.
         </p>
 
         <div className="hero-actions">

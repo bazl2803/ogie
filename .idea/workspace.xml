@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fae48cb-898d-444f-ac8c-39b191cbe60e" name="Changes" comment="refactor: remove unused storefront components and styles">
+    <list default="true" id="0fae48cb-898d-444f-ac8c-39b191cbe60e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(storefront)/_components/categories/category-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(storefront)/_components/categories/category-card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/dropdown/dropdown.context.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/dropdown/dropdown.context.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(storefront)/_components/hero/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(storefront)/_components/hero/hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(storefront)/_components/hero/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(storefront)/_components/hero/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(storefront)/_components/services/services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(storefront)/_components/services/services.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(storefront)/_components/services/services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(storefront)/_components/services/services.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,60 +55,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.000000000032135" />
-      <entry key="M5" value="1.0003293855607995" />
-      <entry key="M10" value="1.1162112557593853" />
-      <entry key="M15" value="1.927225615662689" />
-      <entry key="M30" value="9.139729545006281" />
-      <entry key="H1" value="28.676843413553613" />
-      <entry key="H2" value="60.82318100217706" />
-      <entry key="H4" value="96.71917968310557" />
-      <entry key="D1" value="150.8590014558987" />
-      <entry key="W1" value="163.72463377727962" />
+      <entry key="MS500" value="1.0000017697782069" />
+      <entry key="S2" value="1.03647369109544" />
+      <entry key="S5" value="1.2661216775815762" />
+      <entry key="S10" value="1.5297179601306108" />
+      <entry key="S30" value="2.368144401900837" />
+      <entry key="S60" value="4.433440646558902" />
+      <entry key="M2" value="9.19634814714667" />
+      <entry key="M5" value="20.29816011356565" />
+      <entry key="M10" value="30.12181890768784" />
+      <entry key="M15" value="35.166048342927375" />
+      <entry key="M30" value="41.661871817952985" />
+      <entry key="H1" value="45.80890684752758" />
+      <entry key="H2" value="50.86136830102323" />
+      <entry key="H4" value="69.80803072448114" />
+      <entry key="D1" value="169.17496163833496" />
+      <entry key="W1" value="212.38013455098888" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="9.713144831115468E-279" />
-      <entry key="S10" value="9.855528819501821E-140" />
-      <entry key="S30" value="4.62093901717509E-47" />
-      <entry key="S60" value="7.072080576020636E-24" />
-      <entry key="M2" value="3.775875960875255E-12" />
-      <entry key="M5" value="7.962619242216105E-5" />
-      <entry key="M10" value="0.029909108877526562" />
-      <entry key="M15" value="0.23104285393459587" />
-      <entry key="M30" value="1.9033679411358693" />
-      <entry key="H1" value="5.915523898557191" />
-      <entry key="H2" value="11.409068840863226" />
-      <entry key="H4" value="16.736462031939574" />
-      <entry key="D1" value="24.04680649800733" />
-      <entry key="W1" value="25.708391787665825" />
+      <entry key="MS100" value="6.381171682790163E-225" />
+      <entry key="MS500" value="1.4487054230760625E-45" />
+      <entry key="S2" value="6.1703764936062766E-12" />
+      <entry key="S5" value="3.3821213766778605E-5" />
+      <entry key="S10" value="0.006878843666874026" />
+      <entry key="S30" value="0.3329821939700275" />
+      <entry key="S60" value="0.9723497385672074" />
+      <entry key="M2" value="1.7308090341675348" />
+      <entry key="M5" value="2.892463817049966" />
+      <entry key="M10" value="3.9089418838222656" />
+      <entry key="M15" value="4.43860687708098" />
+      <entry key="M30" value="5.1189644250268715" />
+      <entry key="H1" value="5.5579602579683165" />
+      <entry key="H2" value="6.397748647078842" />
+      <entry key="H4" value="9.815234720048217" />
+      <entry key="D1" value="25.987907795129956" />
+      <entry key="W1" value="32.67895570879345" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="9.224206170692381E-8" />
-      <entry key="MS500" value="0.039172906888771584" />
-      <entry key="S2" value="0.44488365497938664" />
-      <entry key="S5" value="0.7232668829727432" />
-      <entry key="S10" value="0.8504509879897508" />
-      <entry key="S30" value="0.9474357395644926" />
-      <entry key="S60" value="0.9733631077683664" />
-      <entry key="M2" value="0.9865916621574231" />
-      <entry key="M5" value="0.9950214329797731" />
-      <entry key="M10" value="1.1429440669419577" />
-      <entry key="M15" value="2.153992216325777" />
-      <entry key="M30" value="11.031752192765492" />
-      <entry key="H1" value="34.57194452788971" />
-      <entry key="H2" value="72.2053912140506" />
-      <entry key="H4" value="113.43106718411813" />
-      <entry key="D1" value="174.8986325553845" />
-      <entry key="W1" value="189.4318919265619" />
+      <entry key="MS100" value="0.668963777393056" />
+      <entry key="MS500" value="0.9227441347840555" />
+      <entry key="S2" value="1.0158968500409786" />
+      <entry key="S5" value="1.2561418076037987" />
+      <entry key="S10" value="1.5283426835893303" />
+      <entry key="S30" value="2.6554679121921065" />
+      <entry key="S60" value="5.333779442403074" />
+      <entry key="M2" value="10.850366314173598" />
+      <entry key="M5" value="23.12675340298591" />
+      <entry key="M10" value="33.98466048461524" />
+      <entry key="M15" value="39.56917929147402" />
+      <entry key="M30" value="46.76006168378588" />
+      <entry key="H1" value="51.35541006725994" />
+      <entry key="H2" value="57.25184564944396" />
+      <entry key="H4" value="79.61496343421462" />
+      <entry key="D1" value="195.15671186853825" />
+      <entry key="W1" value="245.05789833795987" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -187,7 +189,8 @@
       <workItem from="1787460256808" duration="2250000" />
       <workItem from="1787513930908" duration="7692000" />
       <workItem from="1787526907444" duration="9938000" />
-      <workItem from="1787609628159" duration="2863000" />
+      <workItem from="1787609628159" duration="4465000" />
+      <workItem from="1787685235150" duration="10187000" />
     </task>
     <task id="LOCAL-00001" summary="feat: enhance storefront components with restructured layouts, updated styles, and product mock data additions">
       <option name="closed" value="true" />
@@ -213,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787552238236</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactor: extract DropdownContext and update category card styles with theme-based improvements">
+      <option name="closed" value="true" />
+      <created>1787627609274</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1787627609274</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +244,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: enhance storefront components with restructured layouts, updated styles, and product mock data additions" />
     <MESSAGE value="refactor: remove unused storefront components and styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove unused storefront components and styles" />
+    <MESSAGE value="refactor: extract DropdownContext and update category card styles with theme-based improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: extract DropdownContext and update category card styles with theme-based improvements" />
   </component>
 </project>

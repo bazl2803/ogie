@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { DropdownContext, useDropdown } from "./dropdown.context";
 
 
-export const Dropdown: React.FC<{
+const DropdownRoot: React.FC<{
     open?: boolean;
 } & React.ComponentPropsWithRef<"div">> = (props) => {
     const { children, className, open: openProp, ...rest } = props;
@@ -90,7 +90,7 @@ export const DropdownItem: React.FC<{
     );
 };
 
-Object.assign(Dropdown, {
+export const Dropdown = Object.assign(DropdownRoot, {
     Trigger: DropdownTrigger,
     Content: DropdownContent,
     Item: DropdownItem,
