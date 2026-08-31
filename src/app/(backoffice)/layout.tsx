@@ -1,17 +1,10 @@
 import { ReactNode } from 'react'
+import { BackofficeShell } from './_components'
 
 interface BackofficeLayoutProps {
-    children: ReactNode
+	children: ReactNode
 }
 
-export default function BackofficeLayout({
-    children
-}: BackofficeLayoutProps) {
-
-	return (
-		<div className='backofficeLayout'>
-            <div></div>
-			<div>{children}</div>
-		</div>
-	)
+export default function BackofficeLayout({ children }: BackofficeLayoutProps) {
+	return <BackofficeShell>{children}</BackofficeShell>
 }

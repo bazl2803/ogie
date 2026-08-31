@@ -1,0 +1,7 @@
+.backoffice-shell {
+  display:grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "sidebar main";
+  height: 100vh;
+  width: 100vw;
+}

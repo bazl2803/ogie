@@ -1,23 +1,43 @@
 .logo {
-	width: auto;
-	height: 40px;
-	filter: drop-shadow(0px 0px 4px light-dark(white, black));
+	container-type: inline-size;
 
-	&--light {
-		display: block;
-	}
-
-	&--dark {
+	&__image {
 		display: none;
 	}
+}
 
-	@media (prefers-color-scheme: dark) {
-		&--dark {
+/* Compact + Light */
+@container (max-width: 40px) {
+	@media (prefers-color-scheme: light) {
+		.logo__image--compact.logo__image--light {
 			display: block;
 		}
+	}
+}
 
-		&--light {
-			display: none;
+/* Compact + Dark */
+@container (max-width: 40px) {
+	@media (prefers-color-scheme: dark) {
+		.logo__image--compact.logo__image--dark {
+			display: block;
+		}
+	}
+}
+
+/* Full + Light */
+@container (min-width: 40px) {
+	@media (prefers-color-scheme: light) {
+		.logo__image--full.logo__image--light {
+			display: block;
+		}
+	}
+}
+
+/* Full + Dark */
+@container (min-width: 40px) {
+	@media (prefers-color-scheme: dark) {
+		.logo__image--full.logo__image--dark {
+			display: block;
 		}
 	}
 }
